@@ -104,6 +104,16 @@
     <Folder Include="Pages\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UranoVerde.BLL\UranoVerde.BLL.csproj">
+      <Project>{4f2d39d0-8658-4ddc-8554-cca5cf3bebab}</Project>
+      <Name>UranoVerde.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UranoVerde.DTO\UranoVerde.DTO.csproj">
+      <Project>{61c8e1b7-32ea-40b5-9ba8-09f4c07d9716}</Project>
+      <Name>UranoVerde.DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

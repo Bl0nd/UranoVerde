@@ -42,6 +42,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UranoVerde.DAL\UranoVerde.DAL.csproj">
+      <Project>{6714bfe7-5314-46db-a08e-1b1d2506cb5a}</Project>
+      <Name>UranoVerde.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UranoVerde.DTO\UranoVerde.DTO.csproj">
+      <Project>{61c8e1b7-32ea-40b5-9ba8-09f4c07d9716}</Project>
+      <Name>UranoVerde.DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
