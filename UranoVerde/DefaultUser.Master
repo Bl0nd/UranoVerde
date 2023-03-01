@@ -4,8 +4,11 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Content/Style.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <title>User</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -16,5 +19,8 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
+        <%--Scripts--%>
+    <script src="Scripts/Script.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 </body>
 </html>

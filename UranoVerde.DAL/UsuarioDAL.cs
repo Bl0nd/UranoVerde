@@ -46,7 +46,7 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("", conn);
+                cmd = new SqlCommand("SELECT idUsuario, nomeUsuario, emailUsuario, senhaUsuario, cellUsuario, enderecoUsuario, cepUsuario, tpUsuarioId FROM usuario", conn);
                 dr = cmd.ExecuteReader();
                 List<UsuarioDTO> lista = new List<UsuarioDTO>(); //criando lista vazio
 

@@ -7,38 +7,47 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace UranoVerde
+namespace UranoVerde.Pages
 {
 
 
-    public partial class DefaultUser
+    public partial class ManagerUsuario
     {
 
         /// <summary>
-        /// Controle head.
+        /// Controle gv1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.GridView gv1;
 
         /// <summary>
-        /// Controle form1.
+        /// Controle txtnomeUsuario.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txtnomeUsuario;
 
         /// <summary>
-        /// Controle ContentPlaceHolder1.
+        /// Controle txtsenhaUsuario.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox txtsenhaUsuario;
+
+        /// <summary>
+        /// Controle txtemailUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtemailUsuario;
     }
 }
