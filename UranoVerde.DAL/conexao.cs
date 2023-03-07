@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient; //
+using MySql.Data.MySqlClient;//
 
 namespace UranoVerde.DAL
 {
     public class conexao
     {
         //variaveis
-        protected SqlConnection conn;
-        protected SqlCommand cmd;
-        protected SqlDataReader dr;
+        protected MySqlConnection conn;
+        protected MySqlCommand cmd;
+        protected MySqlDataReader dr;
 
         protected void Conectar()
         {
             try
             {
-                conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB/Initial Catalog=uranoverde;Integrated Security=True");
+                conn = new MySqlConnection("Data Source=localhost; Initial Catalog= uranoverde; Uid= root; Pwd= ;");
                 conn.Open();
             }
             catch (Exception ex)

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using UranoVerde.DTO;
 using System.Collections;
+using MySql.Data.MySqlClient;
 
 namespace UranoVerde.DAL
 {
@@ -19,7 +20,7 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("INNER INTO Usuario(nomeUsuario,emailUsuario,senhaUsuario,cellUsuario,enderecoUsuario,cepUsuario,tpUsuarioId) VALUES (@nomeUsuario, @emailUsuario, @senhaUsuario, @cellUsuario, @enderecoUsuario, @cepUsuario, @tpUsuarioId)", conn);
+                cmd = new MySqlCommand("INNER INTO Usuario(nomeUsuario,emailUsuario,senhaUsuario,cellUsuario,enderecoUsuario,cepUsuario,tpUsuarioId) VALUES (@nomeUsuario, @emailUsuario, @senhaUsuario, @cellUsuario, @enderecoUsuario, @cepUsuario, @tpUsuarioId)", conn);
                 cmd.Parameters.AddWithValue("@nomeUsuario", objCad.nomeUsuario);
                 cmd.Parameters.AddWithValue("@emailUsuario", objCad.emailUsuario);
                 cmd.Parameters.AddWithValue("@senhaUsuario", objCad.senhaUsuario);
@@ -41,26 +42,24 @@ namespace UranoVerde.DAL
         }
 
         //listar
-        public List<UsuarioDTO> Listar()
+        public List<UsuarioListDTO> Listar()
         {
             try
             {
                 Conectar();
-                cmd = new SqlCommand("SELECT idUsuario, nomeUsuario, emailUsuario, senhaUsuario, cellUsuario, enderecoUsuario, cepUsuario, tpUsuarioId FROM usuario", conn);
+                cmd = new MySqlCommand("SELECT nomeUsuario, emailUsuario, cellUsuario, enderecoUsuario, cepUsuario, descUsuarioTp FROM Usuario INNER JOIN tpusuario ON usuario.tpUsuarioId = tpusuario.idUsuarioTp", conn);
                 dr = cmd.ExecuteReader();
-                List<UsuarioDTO> lista = new List<UsuarioDTO>(); //criando lista vazio
+                List<UsuarioListDTO> lista = new List<UsuarioListDTO>(); //criando lista vazio
 
                 while (dr.Read())
                 {
-                    UsuarioDTO obj = new UsuarioDTO();
-                    obj.idUsuario = Convert.ToInt32(dr["idUsuario"]);
+                    UsuarioListDTO obj = new UsuarioListDTO();
                     obj.nomeUsuario = dr["nomeUsuario"].ToString();
                     obj.emailUsuario = dr["emailUsuario"].ToString();
-                    obj.senhaUsuario = dr["senhaUsuario"].ToString();
                     obj.cellUsuario = dr["cellUsuario"].ToString();
                     obj.enderecoUsuario = dr["enderecoUsuario"].ToString();
                     obj.cepUsuario = dr["cepUsuario"].ToString();
-                    obj.tpUsuarioId = Convert.ToInt32(dr["tpUsuarioId"]);
+                    obj.descUsuarioTp = dr["descUsuarioTp"].ToString();
                     //adicionar a lista
                     lista.Add(obj);
                 }
@@ -82,7 +81,7 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("UPDATE Usuario nomeUsuario=@nomeUsuario,emailUsuario=@emailUsuario,senhaUsuario=@senhaUsuario,cellUsuario=@cellUsuario,enderecoUsuario=@enderecoUsuario,cepUsuario=@cepUsuario,tpUsuarioId=@tpUsuarioId", conn);
+                cmd = new MySqlCommand("UPDATE Usuario nomeUsuario=@nomeUsuario,emailUsuario=@emailUsuario,senhaUsuario=@senhaUsuario,cellUsuario=@cellUsuario,enderecoUsuario=@enderecoUsuario,cepUsuario=@cepUsuario,tpUsuarioId=@tpUsuarioId", conn);
                 cmd.Parameters.AddWithValue("@nomeUsuario", objEdita.nomeUsuario);
                 cmd.Parameters.AddWithValue("@emailUsuario", objEdita.emailUsuario);
                 cmd.Parameters.AddWithValue("@senhaUsuario", objEdita.senhaUsuario);
@@ -110,7 +109,7 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new SqlCommand("DELETE FROM Usuario WHERE idUsuario = @idUsuario", conn);
+                cmd = new MySqlCommand("DELETE FROM Usuario WHERE idUsuario = @idUsuario", conn);
                 cmd.Parameters.AddWithValue("@idUsuario", objExclui);
                 cmd.ExecuteNonQuery();
             }

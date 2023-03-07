@@ -85,6 +85,11 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Style.css" />
     <Content Include="Pages\ConsultaUser.aspx" />
+    <Content Include="Pages\img\add.png" />
+    <Content Include="Pages\img\cancel.png" />
+    <Content Include="Pages\img\delete.png" />
+    <Content Include="Pages\img\edit.png" />
+    <Content Include="Pages\img\save.png" />
     <Content Include="Pages\ManagerUserAdm.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -161,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+    <Folder Include="Pages\css\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UranoVerde.BLL\UranoVerde.BLL.csproj">

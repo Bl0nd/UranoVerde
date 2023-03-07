@@ -4,13 +4,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:GridView runat="server" ID="gv1" AutoGenerateColumns="false">
-        <columns>
+        <Columns>
             <asp:BoundField DataField="nomeUsuario" HeaderText="Nome" />
             <asp:BoundField DataField="emailUsuario" HeaderText="Email" />
             <asp:BoundField DataField="cellUsuario" HeaderText="Celular" />
             <asp:BoundField DataField="enderecoUsuario" HeaderText="Endereço" />
             <asp:BoundField DataField="cepUsuario" HeaderText="Cep" />
-            <asp:BoundField DataField="tpUsuarioId" HeaderText="Tipo Usuário" />
-        </columns>
+           <asp:BoundField DataField="descUsuarioTp" HeaderText="Descrição" />
+        </Columns>
     </asp:GridView>
 </asp:Content>

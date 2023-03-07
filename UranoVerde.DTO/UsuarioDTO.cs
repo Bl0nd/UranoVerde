@@ -9,12 +9,13 @@ namespace UranoVerde.DTO
     public class UsuarioDTO
     {
         public int idUsuario { get; set; }
-       public string nomeUsuario { get; set; }
+        public string nomeUsuario { get; set; }
         public string emailUsuario { get; set; }
         public string senhaUsuario { get; set; }
         public string cellUsuario { get; set; }
         public string enderecoUsuario { get; set; }
         public string cepUsuario { get; set; }
         public int tpUsuarioId { get; set; }
+
     }
 }

@@ -15,39 +15,21 @@ namespace UranoVerde.Pages
     {
 
         /// <summary>
-        /// Controle gv1.
+        /// Controle dgv1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gv1;
+        protected global::System.Web.UI.WebControls.GridView dgv1;
 
         /// <summary>
-        /// Controle txtnomeUsuario.
+        /// Controle lblMessage.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtnomeUsuario;
-
-        /// <summary>
-        /// Controle txtsenhaUsuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsenhaUsuario;
-
-        /// <summary>
-        /// Controle txtemailUsuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtemailUsuario;
+        protected global::System.Web.UI.WebControls.Label lblMessage;
     }
 }

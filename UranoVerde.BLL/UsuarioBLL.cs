@@ -19,7 +19,7 @@ namespace UranoVerde.BLL
             objBLL.Cadastrar(objCad);
         }
         //listar
-        public List<UsuarioDTO> ListarUsuario()
+        public List<UsuarioListDTO> ListarUsuario()
         {
             return objBLL.Listar();
         }
