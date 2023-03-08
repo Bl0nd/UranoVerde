@@ -39,7 +39,9 @@ namespace UranoVerde.Pages
                 objModelo.nomeUsuario = (dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).Text.Trim();
                 objModelo.emailUsuario = (dgv1.FooterRow.FindControl("txtEmailUsuarioFooter") as TextBox).Text.Trim();
                 objModelo.senhaUsuario = (dgv1.FooterRow.FindControl("txtSenhaUsuarioFooter") as TextBox).Text.Trim();
-
+                objModelo.cellUsuario = (dgv1.FooterRow.FindControl("txtCellUsuarioFooter") as TextBox).Text.Trim();
+                objModelo.enderecoUsuario = (dgv1.FooterRow.FindControl("txtEnderecoUsuarioFooter") as TextBox).Text.Trim();
+                objModelo.cepUsuario = (dgv1.FooterRow.FindControl("txtCepUsuarioFooter") as TextBox).Text.Trim();
                 objModelo.tpUsuarioId = (dgv1.FooterRow.FindControl("rbl1") as RadioButtonList).Text.Trim();
 
                 objBLL.CadastraUsuario(objModelo);
@@ -55,7 +57,7 @@ namespace UranoVerde.Pages
             objModelo.emailUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtEmailUsuario") as TextBox).Text.Trim();
             objModelo.senhaUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtSenhaUsuario") as TextBox).Text.Trim();
             objModelo.enderecoUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtenderecoUsuario") as TextBox).Text.Trim();
-            objModelo.senhaUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtSenhaUsuario") as TextBox).Text.Trim();
+            objModelo.cellUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtcellUsuario") as TextBox).Text.Trim();
             objModelo.cepUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtcepUsuario") as TextBox).Text.Trim();
             objModelo.tpUsuarioId = (dgv1.Rows[e.RowIndex].FindControl("rbl1") as RadioButtonList).Text.Trim();
             objModelo.idUsuario = Convert.ToInt32(dgv1.DataKeys[e.RowIndex].Value.ToString());

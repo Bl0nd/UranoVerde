@@ -47,7 +47,7 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT nomeUsuario,emailUsuario,descUsuarioTp FROM Usuario INNER JOIN tpusuario ON usuario.tpUsuarioId = tpusuario.idUsuarioTp", conn);
+                cmd = new MySqlCommand("SELECT nomeUsuario,emailUsuario,senhaUsuario,cellUsuario,enderecoUsuario,cepUsuario, descUsuarioTp FROM Usuario INNER JOIN tpusuario ON usuario.tpUsuarioId = tpusuario.idUsuarioTp", conn);
                 dr = cmd.ExecuteReader();
                 List<UsuarioListDTO> lista = new List<UsuarioListDTO>(); //criando lista vazio
 
@@ -56,7 +56,12 @@ namespace UranoVerde.DAL
                     UsuarioListDTO obj = new UsuarioListDTO();
                     obj.nomeUsuario = dr["nomeUsuario"].ToString();
                     obj.emailUsuario = dr["emailUsuario"].ToString();
+                    obj.descUsuarioTp = dr["senhaUsuario"].ToString();
+                    obj.descUsuarioTp = dr["cellUsuario"].ToString();
+                    obj.nomeUsuario = dr["enderecoUsuario"].ToString();
+                    obj.nomeUsuario = dr["cepUsuario"].ToString();
                     obj.descUsuarioTp = dr["descUsuarioTp"].ToString();
+
                     //adicionar a lista
                     lista.Add(obj);
                 }

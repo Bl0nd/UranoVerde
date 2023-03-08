@@ -9,50 +9,55 @@
         <asp:GridView runat="server" ID="dgv1" GridLines="None" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="idUsuario" OnRowCommand="dgv1_RowCommand" OnRowUpdating="dgv1_RowUpdating" OnRowDeleting="dgv1_RowDeleting" OnRowEditing="dgv1_RowEditing"
             OnRowCancelingEdit="dgv1_RowCancelingEdit">
             <Columns>
+                <%--template Nome--%>
+
+                <%--template Email--%>
                 <asp:TemplateField HeaderText="Nome">
                     <ItemTemplate>
                         <asp:Label runat="server" Text='<%#Eval("nomeUsuario")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox ID="txtnomeUsuario" runat="server" MaxLength="50" Text='<%--Eval ("nomeUsuario")--%>' />
+                        <asp:TextBox ID="txtemailUsuario" runat="server" MaxLength="50" Text='<%#Eval("nomeUsuario") %>' />
                         <br />
                         <asp:RequiredFieldValidator
-                            ID="NomeUsuario"
+                            ID="nomeUsuario"
                             runat="server"
-                            ErrorMessage="Digite seu nome !!"
+                            ErrorMessage="Digite o email !!"
                             ForeColor="Red"
-                            ControlToValidate="txtNomeUsuario" />
+                            ControlToValidate="txtnomelUsuario" />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox ID="txtnomeUsuarioFooter" runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
 
+                <%--template Email--%>
                 <asp:TemplateField HeaderText="Email">
                     <ItemTemplate>
                         <asp:Label runat="server" Text='<%#Eval("emailUsuario")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox ID="txtEmailUsuario" runat="server" MaxLength="50" Text='<%#Eval("Email") %>' />
+                        <asp:TextBox ID="txtemailUsuario" runat="server" MaxLength="50" Text='<%#Eval("emailUsuario") %>' />
                         <br />
                         <asp:RequiredFieldValidator
-                            ID="EmailUsuario"
+                            ID="emailUsuario"
                             runat="server"
                             ErrorMessage="Digite o email !!"
                             ForeColor="Red"
-                            ControlToValidate="txtEmailUsuario" />
+                            ControlToValidate="txtemailUsuario" />
                     </EditItemTemplate>
                     <FooterTemplate>
                         <asp:TextBox ID="txtemailUsuarioFooter" runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
 
+                <%--template Senha--%>
                 <asp:TemplateField HeaderText="Senha">
                     <ItemTemplate>
                         <asp:Label runat="server" Text='<%#Eval("senhaUsuario") %>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox ID="txtSenhaUsuario" runat="server" MaxLength="6" Text='<%#Eval("Senha") %>' />
+                        <asp:TextBox ID="txtSenhaUsuario" runat="server" MaxLength="4" Text='<%#Eval("Senha") %>' />
                         <br />
                         <asp:RequiredFieldValidator
                             ID="SenhaUsuario"
@@ -65,6 +70,68 @@
                         <asp:TextBox ID="txtsenhaUsuarioFooter" runat="server" />
                     </FooterTemplate>
                 </asp:TemplateField>
+
+                <%--template Celular--%>
+                <asp:TemplateField HeaderText="Cell">
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%#Eval("cellUsuario") %>' />
+                    </ItemTemplate>
+                    <EditItemTemplate>
+                        <asp:TextBox runat="server" ID="txtcellUsuario" MaxLength="50" Text='<%#Eval("Cel") %>' />
+                        <br />
+                        <asp:RequiredFieldValidator
+                            ID="cellUsuario"
+                            runat="server"
+                            ErrorMessage="Digite seu cel !!"
+                            ForeColor="Red"
+                            ControlToValidate="txtcellUsuario" />
+                    </EditItemTemplate>
+                    <FooterTemplate>
+                        <asp:TextBox runat="server" ID="txtCellUsuarioFooter" MaxLength="50" />
+                    </FooterTemplate>
+                </asp:TemplateField>
+
+                <%--template Endereço--%>
+                <asp:TemplateField HeaderText="Endereco">
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%#Eval("EnderecoUsuario") %>' />
+                    </ItemTemplate>
+                    <EditItemTemplate>
+                        <asp:TextBox runat="server" ID="txtenderecoUsuario" MaxLength="50" Text='<%#Eval("Endereco") %>' />
+                        <br />
+                        <asp:RequiredFieldValidator
+                            ID="enderecoUsuario"
+                            runat="server"
+                            ErrorMessage="Digite seu endereço !!"
+                            ForeColor="Red"
+                            ControlToValidate="txtenderecoUsuario" />
+                    </EditItemTemplate>
+                    <FooterTemplate>
+                        <asp:TextBox runat="server" ID="txtenderecoUsuarioFooter" MaxLength="50" />
+                    </FooterTemplate>
+                </asp:TemplateField>
+
+
+                <%--template Cep--%>
+                <asp:TemplateField HeaderText="Cep">
+                    <ItemTemplate>
+                        <asp:Label runat="server" Text='<%#Eval("cepUsuario") %>' />
+                    </ItemTemplate>
+                    <EditItemTemplate>
+                        <asp:TextBox runat="server" ID="txtcepUsuario" MaxLength="50" Text='<%#Eval("Cep") %>' />
+                        <br />
+                        <asp:RequiredFieldValidator
+                            ID="cepUsuario"
+                            runat="server"
+                            ErrorMessage="Digite seu cep !!"
+                            ForeColor="Red"
+                            ControlToValidate="txtcepUsuario" />
+                    </EditItemTemplate>
+                    <FooterTemplate>
+                        <asp:TextBox runat="server" ID="txtCepUsuarioFooter" MaxLength="50" />
+                    </FooterTemplate>
+                </asp:TemplateField>
+
 
                 <%--radio buttons--%>
                 <asp:TemplateField HeaderText="Tipo Usuario">
