@@ -7,9 +7,6 @@
         <Columns>
             <asp:BoundField DataField="nomeUsuario" HeaderText="Nome" />
             <asp:BoundField DataField="emailUsuario" HeaderText="Email" />
-            <asp:BoundField DataField="cellUsuario" HeaderText="Celular" />
-            <asp:BoundField DataField="enderecoUsuario" HeaderText="Endereço" />
-            <asp:BoundField DataField="cepUsuario" HeaderText="Cep" />
            <asp:BoundField DataField="descUsuarioTp" HeaderText="Descrição" />
         </Columns>
     </asp:GridView>

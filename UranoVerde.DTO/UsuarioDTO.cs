@@ -15,7 +15,7 @@ namespace UranoVerde.DTO
         public string cellUsuario { get; set; }
         public string enderecoUsuario { get; set; }
         public string cepUsuario { get; set; }
-        public int tpUsuarioId { get; set; }
+        public string tpUsuarioId { get; set; }
 
     }
 }

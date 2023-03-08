@@ -33,5 +33,17 @@ namespace UranoVerde.BLL
         {
             objBLL.Excluir(objExclui);
         }
+
+        //SelectById
+        public UsuarioDTO SelectPorId(int objModelo)
+        {
+            return objBLL.BuscaPorId(objModelo);
+        }
+
+        //Listar Admin
+        public List<UsuarioDTO> ListarUserAdmin()
+        {
+            return objBLL.ListarAdmin();
+        }
     }
 }
