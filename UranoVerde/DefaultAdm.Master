@@ -16,11 +16,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <%--navbar--%>
+        <div class="container">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
+   <%-- footer--%>
+
     <%--Scripts--%>
     <script src="Scripts/Script.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>

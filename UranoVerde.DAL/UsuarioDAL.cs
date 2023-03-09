@@ -56,10 +56,10 @@ namespace UranoVerde.DAL
                     UsuarioListDTO obj = new UsuarioListDTO();
                     obj.nomeUsuario = dr["nomeUsuario"].ToString();
                     obj.emailUsuario = dr["emailUsuario"].ToString();
-                    obj.descUsuarioTp = dr["senhaUsuario"].ToString();
-                    obj.descUsuarioTp = dr["cellUsuario"].ToString();
-                    obj.nomeUsuario = dr["enderecoUsuario"].ToString();
-                    obj.nomeUsuario = dr["cepUsuario"].ToString();
+                    obj.senhaUsuario = dr["senhaUsuario"].ToString();
+                    obj.cellUsuario = dr["cellUsuario"].ToString();
+                    obj.enderecoUsuario = dr["enderecoUsuario"].ToString();
+                    obj.cepUsuario = dr["cepUsuario"].ToString();
                     obj.descUsuarioTp = dr["descUsuarioTp"].ToString();
 
                     //adicionar a lista

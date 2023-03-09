@@ -91,6 +91,7 @@
     <Content Include="Pages\img\edit.png" />
     <Content Include="Pages\img\save.png" />
     <Content Include="Pages\ManagerUserAdm.aspx" />
+    <Content Include="Pages\ManagerProdutoAdm.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="Pages\ManagerUserAdm.aspx.designer.cs">
       <DependentUpon>ManagerUserAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ManagerProdutoAdm.aspx.cs">
+      <DependentUpon>ManagerProdutoAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ManagerProdutoAdm.aspx.designer.cs">
+      <DependentUpon>ManagerProdutoAdm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

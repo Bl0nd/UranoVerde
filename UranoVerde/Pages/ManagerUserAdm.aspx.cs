@@ -21,7 +21,7 @@ namespace UranoVerde.Pages
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 PopularGV();
             }
@@ -32,30 +32,103 @@ namespace UranoVerde.Pages
             //}
         }
 
+
+        //messageBox
+        public void MsgBox(String ex, Page pg, Object obj)
+        {
+            string s = "<SCRIPT language='javascript'>alert('" + ex.Replace("\r\n", "\\n").Replace("'", "") + "'); </SCRIPT>";
+            Type cstype = obj.GetType();
+            ClientScriptManager cs = pg.ClientScript;
+            cs.RegisterClientScriptBlock(cstype, s, s.ToString());
+        }
+
+        //MsgBox("! your message !", this.Page, this);
+
+
+        //validacao User
+        private bool ValidaPage()
+        {
+            bool PageValido;
+
+            if (string.IsNullOrEmpty((dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).Text.Trim()))
+            {
+                //(dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).BackColor= Color.Red;
+                MsgBox("Digite o nome !", Page, this);
+                //(dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).BackColor = Color.White;
+                (dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv1.FooterRow.FindControl("txtemailUsuarioFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite o email !", this.Page, this);
+                (dgv1.FooterRow.FindControl("txtemailUsuarioFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv1.FooterRow.FindControl("txtsenhaUsuarioFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite a senha!", this.Page, this);
+                (dgv1.FooterRow.FindControl("txtsenhaUsuarioFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv1.FooterRow.FindControl("txtcellUsuarioFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite o celular !", this.Page, this);
+                (dgv1.FooterRow.FindControl("txtcellUsuarioFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv1.FooterRow.FindControl("txtenderecoUsuarioFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite o endereço !", this.Page, this);
+                (dgv1.FooterRow.FindControl("txtenderecoUsuarioFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv1.FooterRow.FindControl("txtcepUsuarioFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite o cep !", this.Page, this);
+                (dgv1.FooterRow.FindControl("txtcepUsuarioFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if ((dgv1.FooterRow.FindControl("rbl1") as RadioButtonList).SelectedIndex < 0)
+            {
+                MsgBox("Escolha uma das opções!", this.Page, this);
+                (dgv1.FooterRow.FindControl("rbl1") as RadioButtonList).Focus();
+                PageValido = false;
+
+            }
+            else
+            {
+                PageValido = true;
+            }
+            return PageValido;
+
+        }
         protected void dgv1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if(e.CommandName.Equals("Add"))
-            {
-                objModelo.nomeUsuario = (dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).Text.Trim();
-                objModelo.emailUsuario = (dgv1.FooterRow.FindControl("txtEmailUsuarioFooter") as TextBox).Text.Trim();
-                objModelo.senhaUsuario = (dgv1.FooterRow.FindControl("txtSenhaUsuarioFooter") as TextBox).Text.Trim();
-                objModelo.cellUsuario = (dgv1.FooterRow.FindControl("txtCellUsuarioFooter") as TextBox).Text.Trim();
-                objModelo.enderecoUsuario = (dgv1.FooterRow.FindControl("txtEnderecoUsuarioFooter") as TextBox).Text.Trim();
-                objModelo.cepUsuario = (dgv1.FooterRow.FindControl("txtCepUsuarioFooter") as TextBox).Text.Trim();
-                objModelo.tpUsuarioId = (dgv1.FooterRow.FindControl("rbl1") as RadioButtonList).Text.Trim();
+            if (e.CommandName.Equals("Add"))
+                if (ValidaPage())
+                {
+                    {
+                        objModelo.nomeUsuario = (dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).Text.Trim();
+                        objModelo.emailUsuario = (dgv1.FooterRow.FindControl("txtemailUsuarioFooter") as TextBox).Text.Trim();
+                        objModelo.senhaUsuario = (dgv1.FooterRow.FindControl("txtsenhaUsuarioFooter") as TextBox).Text.Trim();
+                        objModelo.cellUsuario = (dgv1.FooterRow.FindControl("txtCellUsuarioFooter") as TextBox).Text.Trim();
+                        objModelo.enderecoUsuario = (dgv1.FooterRow.FindControl("txtenderecoUsuarioFooter") as TextBox).Text.Trim();
+                        objModelo.cepUsuario = (dgv1.FooterRow.FindControl("txtcepUsuarioFooter") as TextBox).Text.Trim();
+                        objModelo.tpUsuarioId = (dgv1.FooterRow.FindControl("rbl1") as RadioButtonList).Text.Trim();
 
-                objBLL.CadastraUsuario(objModelo);
-                PopularGV();
-                (dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).Focus();
-                lblMessage.Text = "Usuário " + objModelo.nomeUsuario + " Cadastrado com Sucesso !!";
-            }
+                        objBLL.CadastraUsuario(objModelo);
+                        PopularGV();
+                        (dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).Focus();
+                        lblMessage.Text = "Usuário " + objModelo.nomeUsuario + " Cadastrado com Sucesso !!";
+                    }
+                }
         }
 
         protected void dgv1_RowUpdating(object sender, GridViewUpdateEventArgs e)
         {
-            objModelo.nomeUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtNomeUsuario") as TextBox).Text.Trim();
-            objModelo.emailUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtEmailUsuario") as TextBox).Text.Trim();
-            objModelo.senhaUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtSenhaUsuario") as TextBox).Text.Trim();
+            objModelo.nomeUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtnomeUsuario") as TextBox).Text.Trim();
+            objModelo.emailUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtemailUsuario") as TextBox).Text.Trim();
+            objModelo.senhaUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtsenhaUsuario") as TextBox).Text.Trim();
             objModelo.enderecoUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtenderecoUsuario") as TextBox).Text.Trim();
             objModelo.cellUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtcellUsuario") as TextBox).Text.Trim();
             objModelo.cepUsuario = (dgv1.Rows[e.RowIndex].FindControl("txtcepUsuario") as TextBox).Text.Trim();
