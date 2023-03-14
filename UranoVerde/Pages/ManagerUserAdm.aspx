@@ -17,12 +17,12 @@
                         <asp:Label runat="server" Text='<%#Eval("NomeUsuario")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox ID="txtnomeUsuario" runat="server" MaxLength="50" Text='<%#Eval("NomeUsuario") %>' />
+                        <asp:TextBox ID="txtNomeUsuario" runat="server" MaxLength="50" Text='<%#Eval("NomeUsuario")%>' />
                         <br />
                         <asp:RequiredFieldValidator
                             ID="NomeUsuario"
                             runat="server"
-                            ErrorMessage="Digite o email !!"
+                            ErrorMessage="Digite o nome !!"
                             ForeColor="Red"
                             ControlToValidate="txtNomeUsuario" />
                     </EditItemTemplate>
@@ -37,7 +37,7 @@
                         <asp:Label runat="server" Text='<%#Eval("EmailUsuario")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox ID="txtEmailUsuario" runat="server" MaxLength="50" Text='<%#Eval("EmailUsuario") %>' />
+                        <asp:TextBox ID="txtEmailUsuario" runat="server" MaxLength="50" Text='<%#Eval("EmailUsuario")%>' />
                         <br />
                         <asp:RequiredFieldValidator
                             ID="EmailUsuario"
@@ -54,10 +54,10 @@
                 <%--template Senha--%>
                 <asp:TemplateField HeaderText="Senha">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("SenhaUsuario") %>' />
+                        <asp:Label runat="server" Text='<%#Eval("SenhaUsuario")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox ID="txtSenhaUsuario" runat="server" MaxLength="4" Text='<%#Eval("SenhaUsuario") %>' />
+                        <asp:TextBox ID="txtSenhaUsuario" runat="server" MaxLength="4" Text='<%#Eval("SenhaUsuario")%>' />
                         <br />
                         <asp:RequiredFieldValidator
                             ID="SenhaUsuario"
@@ -74,10 +74,10 @@
                 <%--template Celular--%>
                 <asp:TemplateField HeaderText="Cell">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CellUsuario") %>' />
+                        <asp:Label runat="server" Text='<%#Eval("CellUsuario")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox runat="server" ID="txtCellUsuario" MaxLength="50" Text='<%#Eval("CellUsuario") %>' />
+                        <asp:TextBox runat="server" ID="txtCellUsuario" MaxLength="50" Text='<%#Eval("CellUsuario")%>' />
                         <br />
                         <asp:RequiredFieldValidator
                             ID="CellUsuario"
@@ -94,10 +94,10 @@
                 <%--template Endereço--%>
                 <asp:TemplateField HeaderText="Endereco">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("EnderecoUsuario") %>' />
+                        <asp:Label runat="server" Text='<%#Eval("EnderecoUsuario")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox runat="server" ID="txtEnderecoUsuario" MaxLength="50" Text='<%#Eval("EnderecoUsuario") %>' />
+                        <asp:TextBox runat="server" ID="txtEnderecoUsuario" MaxLength="50" Text='<%#Eval("EnderecoUsuario")%>' />
                         <br />
                         <asp:RequiredFieldValidator
                             ID="EnderecoUsuario"
@@ -115,10 +115,10 @@
                 <%--template Cep--%>
                 <asp:TemplateField HeaderText="Cep">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("CepUsuario") %>' />
+                        <asp:Label runat="server" Text='<%#Eval("CepUsuario")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
-                        <asp:TextBox runat="server" ID="txtCepUsuario" MaxLength="50" Text='<%#Eval("CepUsuario") %>' />
+                        <asp:TextBox runat="server" ID="txtCepUsuario" MaxLength="50" Text='<%#Eval("CepUsuario")%>' />
                         <br />
                         <asp:RequiredFieldValidator
                             ID="CepUsuario"
@@ -136,7 +136,7 @@
                 <%--radio buttons--%>
                 <asp:TemplateField HeaderText="Tipo Usuario">
                     <ItemTemplate>
-                        <asp:Label runat="server" Text='<%#Eval("descUsuarioTp") %>' />
+                        <asp:Label runat="server" Text='<%#Eval("descUsuarioTp")%>' />
                     </ItemTemplate>
                     <EditItemTemplate>
                         <asp:RadioButtonList ID="rbl1" runat="server">

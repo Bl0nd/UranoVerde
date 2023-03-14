@@ -27,6 +27,50 @@ namespace UranoVerde.Pages
             dgv2.DataBind();
         }
 
+        //messageBox
+        public void MsgBox(String ex, Page pg, Object obj)
+        {
+            string s = "<SCRIPT language='javascript'>alert('" + ex.Replace("\r\n", "\\n").Replace("'", "") + "'); </SCRIPT>";
+            Type cstype = obj.GetType();
+            ClientScriptManager cs = pg.ClientScript;
+            cs.RegisterClientScriptBlock(cstype, s, s.ToString());
+        }
+
+        //MsgBox("! your message !", this.Page, this);
+
+        //validacao User
+        private bool ValidaPage()
+        {
+            bool PageValido;
+
+            if (string.IsNullOrEmpty((dgv2.FooterRow.FindControl("txtnomeProdutoFooter") as TextBox).Text.Trim()))
+            {
+                //(dgv1.FooterRow.FindControl("txtnomeProdutoFooter") as TextBox).BackColor= Color.Red;
+                MsgBox("Digite o Produto !", Page, this);
+                //(dgv1.FooterRow.FindControl("txtnomeProdutoFooter") as TextBox).BackColor = Color.White;
+                (dgv2.FooterRow.FindControl("txtnomeProdutoFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv2.FooterRow.FindControl("txttipoProdutoFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite o tipo do Produto !", this.Page, this);
+                (dgv2.FooterRow.FindControl("txttipoProdutoFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else if (string.IsNullOrEmpty((dgv2.FooterRow.FindControl("txtvalorProdutoFooter") as TextBox).Text.Trim()))
+            {
+                MsgBox("Digite a valor !", this.Page, this);
+                (dgv2.FooterRow.FindControl("txtvalorProdutoFooter") as TextBox).Focus();
+                PageValido = false;
+            }
+            else
+            {
+                PageValido = true;
+            }
+            return PageValido;
+
+        }
+
         //cadastrar produto
         protected void dgv2_RowCommand(object sender, GridViewCommandEventArgs e)
         {
@@ -39,7 +83,7 @@ namespace UranoVerde.Pages
 
                 objBLL.CadastraProduto(objModelo);
                 PopularGVProduto();
-                (dgv2.FooterRow.FindControl("txtNomeProdutoFooter") as TextBox).Focus();
+                (dgv2.FooterRow.FindControl("txtnomeProdutoFooter") as TextBox).Focus();
                 lblMessage.Text = "Produto " + objModelo.nomeProduto + " Cadastrado com Sucesso !!";
             }
         }

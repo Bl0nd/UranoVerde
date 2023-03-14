@@ -20,7 +20,7 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("INSERT INTO Usuario(nomeUsuario,emailUsuario,senhaUsuario,cellUsuario,enderecoUsuario,cepUsuario,tpUsuarioId) VALUES (@nomeUsuario, @emailUsuario, @senhaUsuario, @cellUsuario, @enderecoUsuario, @cepUsuario, @tpUsuarioId)", conn);
+                cmd = new MySqlCommand("INSERT INTO Usuario (nomeUsuario, emailUsuario, senhaUsuario, cellUsuario, enderecoUsuario, cepUsuario, tpUsuarioId) VALUES (@nomeUsuario, @emailUsuario, @senhaUsuario, @cellUsuario, @enderecoUsuario, @cepUsuario, @tpUsuarioId)", conn);
                 cmd.Parameters.AddWithValue("@nomeUsuario", objCad.nomeUsuario);
                 cmd.Parameters.AddWithValue("@emailUsuario", objCad.emailUsuario);
                 cmd.Parameters.AddWithValue("@senhaUsuario", objCad.senhaUsuario);

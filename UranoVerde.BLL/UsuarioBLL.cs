@@ -18,20 +18,37 @@ namespace UranoVerde.BLL
         {
             objBLL.Cadastrar(objCad);
         }
+
         //listar
         public List<UsuarioListDTO> ListarUsuario()
         {
             return objBLL.Listar();
         }
+
         //editar
         public void EditarUsuario(UsuarioDTO objEdita)
         {
             objBLL.Editar(objEdita);
         }
+
         //excluir
         public void ExcluirUsuario(int objExclui)
         {
             objBLL.Excluir(objExclui);
+        }
+
+        //Autenticar
+        public UsuarioAutenticaDTO AutenticaUsuario(string objNome, string objSenha)
+        {
+            UsuarioAutenticaDTO user = objBLL.Autenticar(objNome, objSenha);
+            if (user != null)
+            {
+                return user;
+            }
+            else
+            {
+                throw new Exception("Deu Problema !!");
+            }
         }
 
         //SelectById

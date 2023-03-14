@@ -52,9 +52,9 @@ namespace UranoVerde.Pages
 
             if (string.IsNullOrEmpty((dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).Text.Trim()))
             {
-                //(dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).BackColor= Color.Red;
+                //(dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).BackColor= Color.Red;
                 MsgBox("Digite o nome !", Page, this);
-                //(dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).BackColor = Color.White;
+                //(dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).BackColor = Color.White;
                 (dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).Focus();
                 PageValido = false;
             }
@@ -111,14 +111,14 @@ namespace UranoVerde.Pages
                         objModelo.nomeUsuario = (dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).Text.Trim();
                         objModelo.emailUsuario = (dgv1.FooterRow.FindControl("txtemailUsuarioFooter") as TextBox).Text.Trim();
                         objModelo.senhaUsuario = (dgv1.FooterRow.FindControl("txtsenhaUsuarioFooter") as TextBox).Text.Trim();
-                        objModelo.cellUsuario = (dgv1.FooterRow.FindControl("txtCellUsuarioFooter") as TextBox).Text.Trim();
+                        objModelo.cellUsuario = (dgv1.FooterRow.FindControl("txtcellUsuarioFooter") as TextBox).Text.Trim();
                         objModelo.enderecoUsuario = (dgv1.FooterRow.FindControl("txtenderecoUsuarioFooter") as TextBox).Text.Trim();
                         objModelo.cepUsuario = (dgv1.FooterRow.FindControl("txtcepUsuarioFooter") as TextBox).Text.Trim();
                         objModelo.tpUsuarioId = (dgv1.FooterRow.FindControl("rbl1") as RadioButtonList).Text.Trim();
 
                         objBLL.CadastraUsuario(objModelo);
                         PopularGV();
-                        (dgv1.FooterRow.FindControl("txtNomeUsuarioFooter") as TextBox).Focus();
+                        (dgv1.FooterRow.FindControl("txtnomeUsuarioFooter") as TextBox).Focus();
                         lblMessage.Text = "Usuário " + objModelo.nomeUsuario + " Cadastrado com Sucesso !!";
                     }
                 }
