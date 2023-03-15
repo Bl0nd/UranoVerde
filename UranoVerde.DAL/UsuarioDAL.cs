@@ -47,13 +47,14 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT nomeUsuario,emailUsuario,senhaUsuario,cellUsuario,enderecoUsuario,cepUsuario, descUsuarioTp FROM Usuario INNER JOIN tpusuario ON usuario.tpUsuarioId = tpusuario.idUsuarioTp", conn);
+                cmd = new MySqlCommand("SELECT idUsuario,nomeUsuario,emailUsuario,senhaUsuario,cellUsuario,enderecoUsuario,cepUsuario, descUsuarioTp FROM Usuario INNER JOIN tpusuario ON usuario.tpUsuarioId = tpusuario.idUsuarioTp", conn);
                 dr = cmd.ExecuteReader();
                 List<UsuarioListDTO> lista = new List<UsuarioListDTO>(); //criando lista vazio
 
                 while (dr.Read())
                 {
                     UsuarioListDTO obj = new UsuarioListDTO();
+                    obj.idUsuario = Convert.ToInt32(dr["idUsuario"]);
                     obj.nomeUsuario = dr["nomeUsuario"].ToString();
                     obj.emailUsuario = dr["emailUsuario"].ToString();
                     obj.senhaUsuario = dr["senhaUsuario"].ToString();
@@ -106,13 +107,13 @@ namespace UranoVerde.DAL
         }
 
         //Delete
-        public void Excluir(int objExclui)
+        public void Excluir(int objExcluir)
         {
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("DELETE FROM Usuario WHERE idUsuario = @idUsuario", conn);
-                cmd.Parameters.AddWithValue("@idUsuario", objExclui);
+                cmd = new MySqlCommand("DELETE FROM usuario WHERE idUsuario= @idUsuario", conn);
+                cmd.Parameters.AddWithValue("@idUsuario", objExcluir);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)

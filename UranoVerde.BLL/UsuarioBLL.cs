@@ -32,9 +32,9 @@ namespace UranoVerde.BLL
         }
 
         //excluir
-        public void ExcluirUsuario(int objExclui)
+        public void ExcluirUsuario(int objExcluir)
         {
-            objBLL.Excluir(objExclui);
+            objBLL.Excluir(objExcluir);
         }
 
         //Autenticar
