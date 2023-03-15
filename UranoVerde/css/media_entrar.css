@@ -1,0 +1,140 @@
+/* 
+320px - 480px: dispositivos móveis;
+481px - 768px: tablets;
+769px - 1024px: telas pequenas, laptops;
+1025px - 1200px: desktops;
+1201px - 1600px: telas grandes;
++1601px: TVs e tela grandes.
+*/
+
+/* 1024px: telas pequenas, laptops */
+/* @media screen and (max-width: 1024px)
+{
+
+} */
+
+/* 768px: tablets */
+@media screen and (max-width: 768px) {
+    .entrarC li input {
+        margin-left: 170px;
+    }
+
+    .btnDefault {
+        margin-left: 10px;
+    }
+}
+
+/* 480px: dispositivos móveis */
+@media screen and (max-width: 481px) {
+    .entrarC li input[type=text],
+    .entrarC li input[type=password],
+    .entrarC li input[type=tel],
+    .entrarC li input[type=email],
+    .entrarC li textarea {
+        margin: 10px;
+        margin-left: 15px;
+        width: 90%;
+        padding: 10px;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    .entrarC li input[type=text]:focus,
+    .entrarC li input[type=password]:focus,
+    .entrarC li input[type=tel]:focus,
+    .entrarC li textarea:focus {
+        outline: none;
+        align-items: center;
+    }
+
+    .container-fluid {
+        width: auto;
+        height: 100px;
+    }
+    
+    .navbar-brand img {
+        width: auto;
+        height: 50px;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: -120px;
+    }
+
+    .rodapeC {
+        display: grid;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .rodapeC i {
+        margin-left: 20px;
+        font-size: 40px;
+        transition: .5s;
+    }
+
+    .rodapeC li h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .rodapeC img {
+        padding-left: 100px;
+    }
+
+}
+
+/* 320px: dispositivos móveis */
+@media screen and (max-width: 320px) {
+
+    .container-fluid {
+        width: auto;
+        height: 100px;
+    }
+    
+    .navbar-brand img {
+        width: auto;
+        height: 50px;
+    }
+
+    .btnDefault{
+        margin-left: 30px;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: -120px;
+    }
+
+    .rodapeC {
+        display: grid;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .rodapeC i {
+        margin-left: 5px;
+        font-size: 20px;
+        transition: .5s;
+    }
+
+    .rodapeC li h4 {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .rodapeC img {
+        padding-left: 100px;
+    }
+}

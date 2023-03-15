@@ -1,0 +1,335 @@
+﻿/*#region tudo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+@font-face {
+    font-family: 'Mitr';
+    src: url('../font/Mitr-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Light.otf')
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background-color: #E4FCE9;
+    font-family: 'Poppins';
+}
+
+
+h1 {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2,
+h3 {
+    /* padding-bottom: 15px; */
+    font-size: 16px;
+    text-align: center;
+}
+
+/*#endregion */
+
+/*#region inicio */
+
+.card img {
+    width: auto;
+    height: 400px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    position: relative;
+}
+
+.promocoes h2 {
+    padding: 25px;
+    font-family: 'Mitr';
+    font-weight: bold;
+}
+
+span {
+    background-color: rgba(91, 255, 127, .3);
+}
+
+.sobre {
+    background-color: #c3ffbe;
+    padding: 30px;
+}
+
+    .sobre h1 {
+        background-color: #59fc77;
+    }
+
+.inicioC {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+.inicioI h1 {
+    color: white;
+    font-family: 'Mitr';
+    font-size: 60px;
+    background-color: none;
+}
+
+.inicioI h2 {
+    color: white;
+}
+
+.container-fluid {
+    background-color: #b7ffc5;
+    width: auto;
+    height: 60px;
+}
+
+    .container-fluid li a {
+        background-color: #b7ffc5;
+        line-height: 30px;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+
+        .container-fluid li a:hover {
+            color: white;
+            background-color: #00520f;
+        }
+
+/* .nav-item {
+    text-align: left;
+} */
+
+.navbar-brand img {
+    width: auto;
+    height: 50px;
+}
+
+.inicioI {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 99;
+}
+
+/* .btnDefaultI {
+    margin: 50px;
+    padding: 10px;
+} */
+
+.ambiente p {
+    text-align: start;
+}
+
+.arvoresP h2,
+.relampagoP h2,
+.sementesP h2 {
+    margin: 20px;
+    background-color: #59fc77;
+}
+
+.promocoesM a {
+    margin: 15px;
+    margin-left: 590px;
+}
+
+.ambiente h2 {
+    padding: 20px;
+}
+
+.ambiente h2 {
+    background-color: #59fc77;
+}
+
+.ambiente p,
+img {
+    margin: 20px;
+}
+
+.linkEx {
+    text-align: center;
+    color: black;
+    margin-left: 510px;
+    background-color: rgba(255, 255, 255, .8);
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+    .linkEx:hover {
+        text-align: center;
+        color: white;
+        margin-left: 510px;
+        background-color: rgba(0, 78, 7, 0.8);
+        width: 30%;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+.navbar {
+    position: fixed;
+}
+
+/*#endregion */
+
+/*#region produtos */
+
+.card-body {
+    font-weight: bold;
+}
+
+.capa {
+    background-image: url(/img/capaprodutos.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+.capaI h1 {
+    color: white;
+    padding-left: 490px;
+    font-family: 'Mitr';
+}
+
+.capaI h2 {
+    color: white;
+    font-size: 25px;
+    padding-left: 510px;
+}
+
+.capaI h1,
+.capaI h2,
+.capaI a {
+    margin-right: 530px;
+    margin-bottom: 50px;
+}
+
+.arbusto h2,
+.arvore h2,
+.flor h2,
+.semente h2 {
+    background-color: #67ff83;
+    padding: 20px;
+    font-family: 'Mitr';
+}
+
+/*#endregion */
+
+/*#region entrar*/
+
+.entrar {
+    background-color: #E4FCE9;
+}
+
+    .entrar h1, .entrar h2 {
+        background-color: #59fc77;
+    }
+
+.btnDefault {
+    margin: 5px;
+    margin-left: 590px;
+    padding: 7px 10px;
+    background-color: #00520f;
+    border-radius: 10%;
+    color: #ffffff;
+}
+
+    .btnDefault:hover {
+        margin: 5px;
+        margin-left: 590px;
+        padding: 7px 10px;
+        background-color: #00ff2f;
+        color: #000000;
+    }
+
+.entrarC li input[type=text],
+.entrarC li input[type=password],
+.entrarC li input[type=tel],
+.entrarC li input[type=email],
+.entrarC li textarea {
+    margin: 10px;
+    margin-left: 450px;
+    background-color: rgba(255, 255, 255, .8);
+    width: 30%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+    .entrarC li input[type=text]:focus,
+    .entrarC li input[type=password]:focus,
+    .entrarC li input[type=tel]:focus,
+    .entrarC li textarea:focus {
+        background-color: rgba(255, 255, 255, 1);
+        outline: none;
+        align-items: center;
+    }
+
+
+/*#endregion */
+
+/*#region rodapé */
+.rodape {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #00520f;
+    color: #55ff5d;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: -120px;
+}
+
+.rodapeC {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .rodapeC i {
+        margin-left: 90px;
+        font-size: 40px;
+        transition: .5s;
+    }
+
+        .rodapeC i:hover {
+            color: #55ff5d;
+            transition: .5s;
+        }
+
+    .rodapeC li h4 {
+        font-size: 10px;
+    }
+
+#logo {
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*#endregion rodapé */

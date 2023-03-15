@@ -83,22 +83,105 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\Style.css" />
+    <Content Include="css\media_entrar.css" />
+    <Content Include="css\media_inicio.css" />
+    <Content Include="css\media_produtos.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="entrar.aspx" />
+    <Content Include="img\arvoreafogada.jpg" />
+    <Content Include="img\cap.jpg" />
+    <Content Include="img\capaprodutos.png" />
+    <Content Include="img\capitalista.jpg" />
+    <Content Include="img\foto01.jpg" />
+    <Content Include="img\foto02.jpg" />
+    <Content Include="img\foto03.jpg" />
+    <Content Include="img\foto04.jpg" />
+    <Content Include="img\foto05.jpg" />
+    <Content Include="img\foto06.jpg" />
+    <Content Include="img\foto07.jpg" />
+    <Content Include="img\foto08.jpg" />
+    <Content Include="img\foto09.jpg" />
+    <Content Include="img\foto10.jpg" />
+    <Content Include="img\foto11.jpg" />
+    <Content Include="img\foto12.jpg" />
+    <Content Include="img\foto13.jpg" />
+    <Content Include="img\foto14.jpg" />
+    <Content Include="img\foto15.jpg" />
+    <Content Include="img\foto16.jpg" />
+    <Content Include="img\foto17.jpg" />
+    <Content Include="img\foto18.jpg" />
+    <Content Include="img\foto19.jpg" />
+    <Content Include="img\foto20.jpg" />
+    <Content Include="img\foto21.jpg" />
+    <Content Include="img\foto22.jpg" />
+    <Content Include="img\foto23.jpg" />
+    <Content Include="img\foto24.jpg" />
+    <Content Include="img\foto25.jpg" />
+    <Content Include="img\foto26.jpg" />
+    <Content Include="img\foto27.jpg" />
+    <Content Include="img\foto28.jpg" />
+    <Content Include="img\icon.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\meioambiente.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="Pages\css\media_entrar.css" />
+    <Content Include="Pages\css\media_inicio.css" />
+    <Content Include="Pages\css\media_produtos.css" />
+    <Content Include="Pages\css\reset.css" />
+    <Content Include="Pages\css\Style.css" />
     <Content Include="Pages\ConsultaUser.aspx" />
     <Content Include="Pages\img\add.png" />
+    <Content Include="Pages\img\arvoreafogada.jpg" />
     <Content Include="Pages\img\cancel.png" />
+    <Content Include="Pages\img\cap.jpg" />
+    <Content Include="Pages\img\capaprodutos.png" />
+    <Content Include="Pages\img\capitalista.jpg" />
     <Content Include="Pages\img\delete.png" />
     <Content Include="Pages\img\edit.png" />
+    <Content Include="Pages\img\foto01.jpg" />
+    <Content Include="Pages\img\foto02.jpg" />
+    <Content Include="Pages\img\foto03.jpg" />
+    <Content Include="Pages\img\foto04.jpg" />
+    <Content Include="Pages\img\foto05.jpg" />
+    <Content Include="Pages\img\foto06.jpg" />
+    <Content Include="Pages\img\foto07.jpg" />
+    <Content Include="Pages\img\foto08.jpg" />
+    <Content Include="Pages\img\foto09.jpg" />
+    <Content Include="Pages\img\foto10.jpg" />
+    <Content Include="Pages\img\foto11.jpg" />
+    <Content Include="Pages\img\foto12.jpg" />
+    <Content Include="Pages\img\foto13.jpg" />
+    <Content Include="Pages\img\foto14.jpg" />
+    <Content Include="Pages\img\foto15.jpg" />
+    <Content Include="Pages\img\foto16.jpg" />
+    <Content Include="Pages\img\foto17.jpg" />
+    <Content Include="Pages\img\foto18.jpg" />
+    <Content Include="Pages\img\foto19.jpg" />
+    <Content Include="Pages\img\foto20.jpg" />
+    <Content Include="Pages\img\foto21.jpg" />
+    <Content Include="Pages\img\foto22.jpg" />
+    <Content Include="Pages\img\foto23.jpg" />
+    <Content Include="Pages\img\foto24.jpg" />
+    <Content Include="Pages\img\foto25.jpg" />
+    <Content Include="Pages\img\foto26.jpg" />
+    <Content Include="Pages\img\foto27.jpg" />
+    <Content Include="Pages\img\foto28.jpg" />
+    <Content Include="Pages\img\icon.png" />
+    <Content Include="Pages\img\logo.png" />
+    <Content Include="Pages\img\meioambiente.jpg" />
     <Content Include="Pages\img\save.png" />
     <Content Include="Pages\ManagerUserAdm.aspx" />
     <Content Include="Pages\ManagerProdutoAdm.aspx" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.esm.js" />
-    <Content Include="Scripts\bootstrap.esm.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\Script.js" />
+    <Content Include="produtos.aspx" />
+    <Content Include="scripts\bootstrap.bundle.js" />
+    <Content Include="scripts\bootstrap.bundle.min.js" />
+    <Content Include="scripts\bootstrap.esm.js" />
+    <Content Include="scripts\bootstrap.esm.min.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\Script.js" />
+    <Content Include="video\assassinato.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +198,20 @@
     </Compile>
     <Compile Include="DefaultUser.Master.designer.cs">
       <DependentUpon>DefaultUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="entrar.aspx.cs">
+      <DependentUpon>entrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="entrar.aspx.designer.cs">
+      <DependentUpon>entrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ConsultaUser.aspx.cs">
       <DependentUpon>ConsultaUser.aspx</DependentUpon>
@@ -137,6 +234,13 @@
     <Compile Include="Pages\ManagerProdutoAdm.aspx.designer.cs">
       <DependentUpon>ManagerProdutoAdm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="produtos.aspx.cs">
+      <DependentUpon>produtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="produtos.aspx.designer.cs">
+      <DependentUpon>produtos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -158,13 +262,15 @@
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
     <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="img\photothumb.db" />
     <None Include="packages.config" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.esm.js.map" />
-    <Content Include="Scripts\bootstrap.esm.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="scripts\bootstrap.bundle.js.map" />
+    <Content Include="scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="scripts\bootstrap.esm.js.map" />
+    <Content Include="scripts\bootstrap.esm.min.js.map" />
+    <Content Include="scripts\bootstrap.js.map" />
+    <Content Include="scripts\bootstrap.min.js.map" />
+    <Content Include="Pages\img\photothumb.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -172,10 +278,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-    <Folder Include="Pages\css\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\UranoVerde.BLL\UranoVerde.BLL.csproj">
       <Project>{4f2d39d0-8658-4ddc-8554-cca5cf3bebab}</Project>

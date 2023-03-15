@@ -1,0 +1,201 @@
+/* 
+320px - 480px: dispositivos móveis;
+481px - 768px: tablets;
+769px - 1024px: telas pequenas, laptops;
+1025px - 1200px: desktops;
+1201px - 1600px: telas grandes;
++1601px: TVs e tela grandes.
+*/
+
+/* 1024px: telas pequenas, laptops */
+/* @media screen and (max-width: 1024px)
+{
+
+} */
+
+/* 768px: tablets */
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        width: auto;
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        width: auto;
+        height: 50px;
+    }
+
+
+    .card img {
+        width: auto;
+        height: 200px;
+    }
+
+    .ambiente img {
+        width: auto;
+        height: 200px;
+    }
+
+    .ambienteC img,
+    .ambienteI img {
+        align-items: baseline;
+    }
+
+    .promocoesM a {
+        align-items: center;
+    }
+
+    .sobreC h2 {
+        padding: 30px;
+        font-size: 22px;
+    }
+
+    .inicioI h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* 480px: dispositivos móveis */
+@media screen and (max-width: 481px) {
+    .inicioI {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .linkEx {
+        margin-left: 100px;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: -120px;
+    }
+
+    .rodapeC {
+        display: grid;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .rodapeC i {
+        margin-left: 20px;
+        font-size: 40px;
+        transition: .5s;
+    }
+
+    .rodapeC li h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .rodapeC img {
+        padding-left: 100px;
+    }
+
+}
+
+/* 320px: dispositivos móveis */
+@media screen and (max-width: 320px) {
+    .inicioI h1 {
+        font-size: 25px;
+    }
+
+    .inicioI h2 {
+        font-size: 15px;
+    }
+
+    .sobre h1 {
+        font-size: 20px;
+    }
+
+    .sobre h3 {
+        font-size: 15px;
+    }
+
+    .sobre a {
+        font-size: 10px;
+    }
+
+    .ambiente h1 {
+        font-size: 20px;
+    }
+
+    .ambiente h2 {
+        font-size: 15px;
+    }
+
+    .ambiente p {
+        font-size: 15px;
+    }
+
+    .linkEx {
+        text-align: center;
+        color: black;
+        margin-left: 45px;
+        background-color: rgba(255, 255, 255, .8);
+        width: 30%;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .linkEx:hover {
+        text-align: center;
+        color: white;
+        margin-left: 45px;
+        background-color: rgba(0, 78, 7, 0.8);
+        width: 30%;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .container-fluid {
+        width: auto;
+        height: 100px;
+    }
+
+    .navbar-brand img {
+        width: auto;
+        height: 50px;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: -120px;
+    }
+
+    .rodapeC {
+        display: grid;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .rodapeC i {
+        margin-left: 5px;
+        font-size: 20px;
+        transition: .5s;
+    }
+
+    .rodapeC li h4 {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .rodapeC img {
+        padding-left: 100px;
+    }
+
+}
