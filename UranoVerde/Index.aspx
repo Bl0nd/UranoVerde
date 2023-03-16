@@ -38,10 +38,10 @@
                             <a class="nav-link active" aria-current="page" href="index.aspx">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="produtos.html">Produtos</a>
+                            <a class="nav-link" href="produtos.aspx">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="entrar.html">Entrar</a>
+                            <a class="nav-link" href="entrar.aspx">Entrar</a>
                         </li>
                     </ul>
                 </div>

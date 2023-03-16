@@ -69,9 +69,9 @@ span {
     padding: 30px;
 }
 
-.sobre h1 {
-    background-color: #59fc77;
-}
+    .sobre h1 {
+        background-color: #59fc77;
+    }
 
 .inicioC {
     position: relative;
@@ -96,17 +96,17 @@ span {
     height: 60px;
 }
 
-.container-fluid li a {
-    background-color: #b7ffc5;
-    line-height: 30px;
-    padding: 10px 15px;
-    font-weight: bold;
-}
+    .container-fluid li a {
+        background-color: #b7ffc5;
+        line-height: 30px;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
 
-.container-fluid li a:hover {
-    color: white;
-    background-color: #00520f;
-}
+        .container-fluid li a:hover {
+            color: white;
+            background-color: #00520f;
+        }
 
 /* .nav-item {
     text-align: left;
@@ -155,7 +155,7 @@ span {
     padding: 20px;
 }
 
-.ambiente h2{
+.ambiente h2 {
     background-color: #59fc77;
 }
 
@@ -174,17 +174,17 @@ img {
     font-size: 20px;
 }
 
-.linkEx:hover {
-    text-align: center;
-    color: white;
-    margin-left: 510px;
-    background-color: rgba(0, 78, 7, 0.8);
-    width: 30%;
-    padding: 10px;
-    font-size: 20px;
-}
+    .linkEx:hover {
+        text-align: center;
+        color: white;
+        margin-left: 510px;
+        background-color: rgba(0, 78, 7, 0.8);
+        width: 30%;
+        padding: 10px;
+        font-size: 20px;
+    }
 
-.navbar{
+.navbar {
     position: fixed;
 }
 
@@ -204,7 +204,6 @@ img {
     width: 100%;
     text-align: center;
     padding: 50px;
-
 }
 
 .capaI h1 {
@@ -243,9 +242,9 @@ img {
     background-color: #E4FCE9;
 }
 
-.entrar h1, .entrar h2{
-    background-color: #59fc77;
-}
+    .entrar h1, .entrar h2 {
+        background-color: #59fc77;
+    }
 
 .btnDefault {
     margin: 5px;
@@ -256,13 +255,13 @@ img {
     color: #ffffff;
 }
 
-.btnDefault:hover {
-    margin: 5px;
-    margin-left: 590px;
-    padding: 7px 10px;
-    background-color: #00ff2f;
-    color: #000000;
-}
+    .btnDefault:hover {
+        margin: 5px;
+        margin-left: 590px;
+        padding: 7px 10px;
+        background-color: #00ff2f;
+        color: #000000;
+    }
 
 .entrarC li input[type=text],
 .entrarC li input[type=password],
@@ -277,14 +276,14 @@ img {
     font-size: 15px;
 }
 
-.entrarC li input[type=text]:focus,
-.entrarC li input[type=password]:focus,
-.entrarC li input[type=tel]:focus,
-.entrarC li textarea:focus {
-    background-color: rgba(255, 255, 255, 1);
-    outline: none;
-    align-items: center;
-}
+    .entrarC li input[type=text]:focus,
+    .entrarC li input[type=password]:focus,
+    .entrarC li input[type=tel]:focus,
+    .entrarC li textarea:focus {
+        background-color: rgba(255, 255, 255, 1);
+        outline: none;
+        align-items: center;
+    }
 
 
 /*#endregion */
@@ -309,20 +308,20 @@ img {
     align-items: center;
 }
 
-.rodapeC i {
-    margin-left: 90px;
-    font-size: 40px;
-    transition: .5s;
-}
+    .rodapeC i {
+        margin-left: 90px;
+        font-size: 40px;
+        transition: .5s;
+    }
 
-.rodapeC i:hover {
-    color: #55ff5d;
-    transition: .5s;
-}
+        .rodapeC i:hover {
+            color: #55ff5d;
+            transition: .5s;
+        }
 
-.rodapeC li h4 {
-    font-size: 10px;
-}
+    .rodapeC li h4 {
+        font-size: 10px;
+    }
 
 #logo {
     width: auto;
@@ -334,3 +333,42 @@ img {
 }
 
 /*#endregion rodapé */
+
+/*#region login*/
+#login {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    align-items: center;
+}
+
+    #login h4 {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+
+.cxTexto {
+    width: 100%;
+}
+
+.contactC {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contactI {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+    .contactI li {
+        padding: 20px 10px;
+    }
+
+/*#endregion login*/
