@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DefaultAdm.Master" AutoEventWireup="true" CodeBehind="ManagerUserAdm.aspx.cs" Inherits="UranoVerde.Pages.ManagerUsuario" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/styleP.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="base">
+        <br />
         <h1 id="user">Users</h1>
         <asp:GridView runat="server" ID="dgv1" GridLines="None" AutoGenerateColumns="false" ShowFooter="true" DataKeyNames="idUsuario" OnRowCommand="dgv1_RowCommand" OnRowUpdating="dgv1_RowUpdating" OnRowDeleting="dgv1_RowDeleting" OnRowEditing="dgv1_RowEditing"
             OnRowCancelingEdit="dgv1_RowCancelingEdit">
@@ -142,7 +143,7 @@
                         <asp:RadioButtonList ID="rbl1" runat="server">
                             <asp:ListItem Value="1" Text=" Administrador" />
                             <asp:ListItem Value="2" Text=" Vendedor" />
-                            <asp:ListItem Value="2" Text="Cliente" />
+                            <asp:ListItem Value="3" Text="Cliente" />
                         </asp:RadioButtonList>
                         <asp:RequiredFieldValidator
                             ID="rblist"
@@ -155,7 +156,7 @@
                         <asp:RadioButtonList ID="rbl1" runat="server">
                             <asp:ListItem Value="1" Text=" Administrador" />
                             <asp:ListItem Value="2" Text=" Vendedor" />
-                            <asp:ListItem Value="2" Text="Cliente" />
+                            <asp:ListItem Value="3" Text="Cliente" />
                         </asp:RadioButtonList>
                     </FooterTemplate>
                 </asp:TemplateField>
@@ -178,7 +179,7 @@
             </Columns>
         </asp:GridView>
         <br />
-        <asp:Label ID="lblMessage" ForeColor="Green" runat="server" Text="Label" />
+
     </div>
 
 </asp:Content>

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DefaultAdm.Master" AutoEventWireup="true" CodeBehind="ManagerProdutoAdm.aspx.cs" Inherits="UranoVerde.Pages.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="css/style.css" rel="stylesheet" />
+<link href="css/styleP.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div class="base">
@@ -49,7 +49,7 @@
             </Columns>
         </asp:GridView>
         <br />
-        <asp:Label ID="lblMessage" ForeColor="Green" runat="server" Text="Label" />
+
     </div>
 
 </asp:Content>

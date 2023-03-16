@@ -333,3 +333,45 @@ img {
 }
 
 /*#endregion rodapé */
+
+/*#region defaultUser*/
+.base {
+    width: 100%;
+    min-height: 90px;
+    padding: 20px;
+}
+
+    .base h1 {
+        font-size: 20px;
+        color: green;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .base table {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+        border-bottom: 1px solid green;
+    }
+
+        .base table th {
+            font-size: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid green;
+        }
+
+        .base table td {
+            height: 10px;
+            line-height: 10px;
+            padding: 10px;
+        }
+
+            .base table td:last-child {
+                padding-bottom: 50px;
+            }
+
+/*#endregion defaultUser*/
+
