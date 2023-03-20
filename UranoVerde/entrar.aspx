@@ -46,7 +46,7 @@
                 </div>
             </div>
         </nav>
-
+    <form id="form1" runat="server">
         <div class="entrar">
             <h1>ENTRAR</h1>
             <h2>Para entrar, digite seu e-mail e senha</h2>
@@ -61,10 +61,12 @@
                     <%-- <input type="password" placeholder="Senha:" autocomplete="off" id="senha" maxlength="5" required>--%>
                     <asp:TextBox ID="txtSenha" runat="server" AutoCompleteType="Disabled" MaxLength="4" TextMode="Password" Width="50%" Placeholder="Senha:"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredSenha" runat="server" ErrorMessage="Digite a senha com 4 digitos !!" ForeColor="Green" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
-
                 </li>
                 <li>
-                    <input type="submit" class="btnDefault" value="ENTRAR">
+                    <li>
+                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" CssClass="btnDefault"  />
+                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btnDefault" />
+                    </li>
                 </li>
                 <li>
                     <input type="submit" class="btnDefault" value="ESQUECI A SENHA">
@@ -101,7 +103,7 @@
             </div>
         </div>
 
-
+        </form>
         <footer>
             <div class="rodape">
                 <ul class="rodapeC">

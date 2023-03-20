@@ -24,6 +24,7 @@ namespace UranoVerde.Pages
             if (!IsPostBack)
             {
                 PopularGV();
+                lblMessage.Text = string.Empty;
             }
             //iniciando session
             if (Session["idUsuario"] == null)
