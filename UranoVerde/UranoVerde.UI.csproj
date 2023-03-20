@@ -125,7 +125,6 @@
     <Content Include="img\logo.png" />
     <Content Include="img\meioambiente.jpg" />
     <Content Include="index.aspx" />
-    <Content Include="Login.aspx" />
     <Content Include="Pages\css\media_entrar.css" />
     <Content Include="Pages\css\media_inicio.css" />
     <Content Include="Pages\css\media_produtos.css" />
@@ -172,8 +171,8 @@
     <Content Include="Pages\img\logo.png" />
     <Content Include="Pages\img\meioambiente.jpg" />
     <Content Include="Pages\img\save.png" />
+    <Content Include="Pages\ConsultaProduto.aspx" />
     <Content Include="Pages\ManagerUserAdm.aspx" />
-    <Content Include="Pages\ManagerProdutoAdm.aspx" />
     <Content Include="produtos.aspx" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
@@ -214,13 +213,6 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Pages\ConsultaUser.aspx.cs">
       <DependentUpon>ConsultaUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -228,19 +220,19 @@
     <Compile Include="Pages\ConsultaUser.aspx.designer.cs">
       <DependentUpon>ConsultaUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ConsultaProduto.aspx.cs">
+      <DependentUpon>ConsultaProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConsultaProduto.aspx.designer.cs">
+      <DependentUpon>ConsultaProduto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ManagerUserAdm.aspx.cs">
       <DependentUpon>ManagerUserAdm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\ManagerUserAdm.aspx.designer.cs">
       <DependentUpon>ManagerUserAdm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\ManagerProdutoAdm.aspx.cs">
-      <DependentUpon>ManagerProdutoAdm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\ManagerProdutoAdm.aspx.designer.cs">
-      <DependentUpon>ManagerProdutoAdm.aspx</DependentUpon>
     </Compile>
     <Compile Include="produtos.aspx.cs">
       <DependentUpon>produtos.aspx</DependentUpon>

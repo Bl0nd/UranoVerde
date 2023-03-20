@@ -5,15 +5,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <div class="base">
-    <asp:GridView runat="server" ID="gv1" AutoGenerateColumns="false">
+    <div class="base">
+        <asp:GridView runat="server" ID="gv1" AutoGenerateColumns="false">
 
 
-        <Columns>
-            <asp:BoundField DataField="nomeUsuario" HeaderText="Nome" />
-            <asp:BoundField DataField="emailUsuario" HeaderText="Email" />
-           <asp:BoundField DataField="descUsuarioTp" HeaderText="Descrição" />
-        </Columns>
-    </asp:GridView>
-            </div>
+            <Columns>
+                <asp:BoundField DataField="nomeUsuario" HeaderText="Nome" />
+                <asp:BoundField DataField="emailUsuario" HeaderText="Email" />
+                <asp:BoundField DataField="descUsuarioTp" HeaderText="Descrição" />
+            </Columns>
+        </asp:GridView>
+    </div>
 </asp:Content>

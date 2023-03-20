@@ -53,10 +53,15 @@
             <div class="entrarC">
 
                 <li>
-                    <input type="text" placeholder="Nome:" autocomplete="off" id="nome" autofocus required>
+                    <%-- //<input type="text" placeholder="Nome:" autocomplete="off" id="nome" autofocus required>--%>
+                    <asp:TextBox ID="txtNome" runat="server" AutoCompleteType="Disabled" MaxLength="150" Width="50%" Placeholder="Nome:"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredNome" runat="server" ErrorMessage="Digite o Nome do usuario !!" ForeColor="Green" ControlToValidate="txtNome"></asp:RequiredFieldValidator>
                 </li>
                 <li>
-                    <input type="password" placeholder="Senha:" autocomplete="off" id="senha" maxlength="5" required>
+                    <%-- <input type="password" placeholder="Senha:" autocomplete="off" id="senha" maxlength="5" required>--%>
+                    <asp:TextBox ID="txtSenha" runat="server" AutoCompleteType="Disabled" MaxLength="4" TextMode="Password" Width="50%" Placeholder="Senha:"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredSenha" runat="server" ErrorMessage="Digite a senha com 4 digitos !!" ForeColor="Green" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
+
                 </li>
                 <li>
                     <input type="submit" class="btnDefault" value="ENTRAR">
@@ -64,7 +69,9 @@
                 <li>
                     <input type="submit" class="btnDefault" value="ESQUECI A SENHA">
                 </li>
-
+                <li>
+                    <asp:Label ID="lblMessage" runat="server" Text="Label"></asp:Label>
+                </li>
 
                 <h1>CRIAR NOVA CONTA</h1>
                 <h2>Para criar uma nova conta, digite ses dados</h2>
@@ -124,6 +131,4 @@
     <script src="/script/script.js"></script>
 </body>
 
-</html>
-</body>
 </html>

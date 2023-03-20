@@ -9,7 +9,7 @@ using UranoVerde.DTO;
 
 namespace UranoVerde.Pages
 {
-    public partial class ManagerUsuario : System.Web.UI.Page
+    public partial class ManagerUserAdm : System.Web.UI.Page
     {
         UsuarioDTO objModelo = new UsuarioDTO();
         UsuarioBLL objBLL = new UsuarioBLL();
@@ -25,11 +25,11 @@ namespace UranoVerde.Pages
             {
                 PopularGV();
             }
-            ////iniciando session
-            //if (Session["idUsuario"] == null)
-            //{
-            //    Response.Redirect("~/Login.aspx");
-            //}
+            //iniciando session
+            if (Session["idUsuario"] == null)
+            {
+                Response.Redirect("~/entrar.aspx");
+            }
         }
 
 
@@ -43,7 +43,6 @@ namespace UranoVerde.Pages
         }
 
         //MsgBox("! your message !", this.Page, this);
-
 
         //validacao User
         private bool ValidaPage()
@@ -100,8 +99,8 @@ namespace UranoVerde.Pages
                 PageValido = true;
             }
             return PageValido;
-
         }
+
         protected void dgv1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName.Equals("Add"))

@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media_produtos.css">
-     <%--  bootstrap--%>
+    <%--  bootstrap--%>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-     <%--boxicons--%>
+    <%--boxicons--%>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="img/icon.png" type="icon">
     <title>Produtos</title>
@@ -35,13 +35,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Início</a>
+                            <a class="nav-link" href="index.aspx">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="produtos.html">Produtos</a>
+                            <a class="nav-link active" aria-current="page" href="produtos.aspx">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="entrar.html">Entrar</a>
+                            <a class="nav-link" href="entrar.aspx">Entrar</a>
                         </li>
                     </ul>
                 </div>
@@ -125,6 +125,19 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/foto23.jpg" class="card-img-top" alt="Daphne L.">
+                            <div class="card-body">
+                                <h5 class="card-title">Daphne L.</h5>
+                                <p class="card-text">
+                                    Arbusto<br>
+                                    R$25,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -137,8 +150,23 @@
                             <img src="img/foto06.jpg" class="card-img-top" alt="Araucária">
                             <div class="card-body">
                                 <h5 class="card-title">Araucária</h5>
-                                <p class="card-text">Árvore<br>
-                                    R$28,00</p>
+                                <p class="card-text">
+                                    Árvore<br>
+                                    R$28,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/foto07.jpg" class="card-img-top" alt="Jacarandá-da-Bahia">
+                            <div class="card-body">
+                                <h5 class="card-title">Jacarandá-da-Bahia</h5>
+                                <p class="card-text">
+                                    Árvore<br>
+                                    R$25,00
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -147,43 +175,55 @@
                             <img src="img/foto08.jpg" class="card-img-top" alt="Canela-Imbuia">
                             <div class="card-body">
                                 <h5 class="card-title">Canela-Imbuia</h5>
-                                <p class="card-text">Árvore<br>
-                                    R$15,00</p>
+                                <p class="card-text">
+                                    Árvore<br>
+                                    R$15,00
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="img/foto10.jpg" class="card-img-top" alt="Chuva-de-Ouro">
-                            <div class="card-body">
-                                <h5 class="card-title">Chuva-de-Ouro</h5>
-                                <p class="card-text">Árvore<br>
-                                    R$30,00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="img/foto07.jpg" class="card-img-top" alt="Jacarandá-da-Bahia">
-                            <div class="card-body">
-                                <h5 class="card-title">Jacarandá-da-Bahia</h5>
-                                <p class="card-text">Árvore<br>
-                                    R$25,00</p>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col">
                         <div class="card">
                             <img src="img/foto09.jpg" class="card-img-top" alt="Ipê Roxo">
                             <div class="card-body">
                                 <h5 class="card-title">Ipê Roxo</h5>
-                                <p class="card-text">Árvore<br>
-                                    R$27,00</p>
+                                <p class="card-text">
+                                    Árvore<br>
+                                    R$27,00
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/foto10.jpg" class="card-img-top" alt="Chuva-de-Ouro">
+                            <div class="card-body">
+                                <h5 class="card-title">Chuva-de-Ouro</h5>
+                                <p class="card-text">
+                                    Árvore<br>
+                                    R$30,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/foto22.jpg" class="card-img-top" alt=" 	Araucária">
+                            <div class="card-body">
+                                <h5 class="card-title">Araucária</h5>
+                                <p class="card-text">
+                                    Árvore<br>
+                                    R$28,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
 
             <div class="flor">
                 <h2>Flor</h2>
@@ -195,8 +235,10 @@
                             <img src="img/foto11.jpg" class="card-img-top" alt="Flor Azaleia">
                             <div class="card-body">
                                 <h5 class="card-title">Azaleia</h5>
-                                <p class="card-text">Flor<br>
-                                    R$22,00</p>
+                                <p class="card-text">
+                                    Flor<br>
+                                    R$22,00
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -206,8 +248,10 @@
                             <img src="img/foto12.jpg" class="card-img-top" alt="Flor Girassól">
                             <div class="card-body">
                                 <h5 class="card-title">Girassól</h5>
-                                <p class="card-text">Flor<br>
-                                    R$24,00</p>
+                                <p class="card-text">
+                                    Flor<br>
+                                    R$24,00
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -217,8 +261,10 @@
                             <img src="img/foto13.jpg" class="card-img-top" alt="Copo-de-Leite">
                             <div class="card-body">
                                 <h5 class="card-title">Copo-de-Leite</h5>
-                                <p class="card-text">Flor<br>
-                                    R$21,00</p>
+                                <p class="card-text">
+                                    Flor<br>
+                                    R$21,00
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -229,8 +275,10 @@
                             <img src="img/foto14.jpg" class="card-img-top" alt="Orquídeas">
                             <div class="card-body">
                                 <h5 class="card-title">Orquídeas</h5>
-                                <p class="card-text">Flor<br>
-                                    R$24,00</p>
+                                <p class="card-text">
+                                    Flor<br>
+                                    R$24,00
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -240,12 +288,26 @@
                             <img src="img/foto15.jpg" class="card-img-top" alt="Rosa">
                             <div class="card-body">
                                 <h5 class="card-title">Rosa</h5>
-                                <p class="card-text">Flor<br>
-                                    R$21,00</p>
+                                <p class="card-text">
+                                    Flor<br>
+                                    R$21,00
+                                </p>
                             </div>
                         </div>
                     </div>
 
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/foto28.jpg" class="card-img-top" alt="Margarida">
+                            <div class="card-body">
+                                <h5 class="card-title">Margarida</h5>
+                                <p class="card-text">
+                                    Flor<br>
+                                    R$22,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -259,8 +321,10 @@
                             <img src="img/foto16.jpg" class="card-img-top" alt="Semente de Amora">
                             <div class="card-body">
                                 <h5 class="card-title">Semente de Amora</h5>
-                                <p class="card-text">Semente<br>
-                                    R$02,00</p>
+                                <p class="card-text">
+                                    Semente<br>
+                                    R$02,00
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -269,38 +333,62 @@
                             <img src="img/foto17.jpg" class="card-img-top" alt="Semente de Girassól">
                             <div class="card-body">
                                 <h5 class="card-title">Semente de Girassól</h5>
-                                <p class="card-text">Semente<br>
-                                    R$05,00</p>
+                                <p class="card-text">
+                                    Semente<br>
+                                    R$05,00
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="img/foto20.jpg" class="card-img-top" alt="Semente de Uva">
-                            <div class="card-body">
-                                <h5 class="card-title">Semente de Uva</h5>
-                                <p class="card-text">Semente<br>
-                                    R$05,00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="img/foto18.jpg" class="card-img-top" alt="Semente de Jabuticaba">
-                            <div class="card-body">
-                                <h5 class="card-title">Semente de Jabuticaba</h5>
-                                <p class="card-text">Semente<br>
-                                    R$09,00</p>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col">
                         <div class="card">
                             <img src="img/foto19.jpg" class="card-img-top" alt="Semente de Jambolão">
                             <div class="card-body">
                                 <h5 class="card-title">Semente de Jambolão</h5>
-                                <p class="card-text">Semente<br>
-                                    R$05,00</p>
+                                <p class="card-text">
+                                    Semente<br>
+                                    R$05,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/foto20.jpg" class="card-img-top" alt="Semente de Uva">
+                            <div class="card-body">
+                                <h5 class="card-title">Semente de Uva</h5>
+                                <p class="card-text">
+                                    Semente<br>
+                                    R$05,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/foto21.jpg" class="card-img-top" alt="Semente de Jabuticaba">
+                            <div class="card-body">
+                                <h5 class="card-title">Semente de Alface</h5>
+                                <p class="card-text">
+                                    Semente<br>
+                                    R$09,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/foto26.jpg" class="card-img-top" alt="Semente de Tomate">
+                            <div class="card-body">
+                                <h5 class="card-title">Semente de Tomate</h5>
+                                <p class="card-text">
+                                    Semente<br>
+                                    R$02,00
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -338,6 +426,4 @@
     <script src="/script/script.js"></script>
 </body>
 
-</html>
-</body>
 </html>

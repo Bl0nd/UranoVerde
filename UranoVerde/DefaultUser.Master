@@ -40,7 +40,7 @@
                                 <a class="nav-link active" aria-current="page" href="index.aspx">Início</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ManagerProdutoAdm.aspx#produto">Produtos</a>
+                                <a class="nav-link" href="ConsultaProduto.aspx#produto">Produtos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="ConsultaUser.aspx#user">Users</a>

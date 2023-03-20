@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DefaultAdm.Master" AutoEventWireup="true" CodeBehind="ManagerUserAdm.aspx.cs" Inherits="UranoVerde.Pages.ManagerUsuario" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DefaultAdm.Master" AutoEventWireup="true" CodeBehind="ManagerUserAdm.aspx.cs" Inherits="UranoVerde.Pages.ManagerUserAdm" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="css/styleP.css" rel="stylesheet" />
@@ -179,7 +179,7 @@
             </Columns>
         </asp:GridView>
         <br />
-
+        <asp:Label ID="lblMessage" ForeColor="Green" runat="server" Text="" />
     </div>
 
 </asp:Content>
