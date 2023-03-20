@@ -43,13 +43,13 @@ namespace UranoVerde
                     {
                         case 1:
                             Session["Usuario"] = txtNome.Text.Trim().ToUpper();
-                            Response.Redirect("/Pages/ManagerUserAdmin.aspx");
+                            Response.Redirect("Pages/ManagerUserAdmin.aspx");
                             //lblMessage.Text = "Admin";
                             Limpar();
                             break;
                         case 2:
                             Session["Usuario"] = txtNome.Text.Trim().ToUpper();
-                            Response.Redirect("/Pages/ConsultaUser.aspx");
+                            Response.Redirect("Pages/ConsultaUser.aspx");
                             //lblMessage.Text = "User";
                             Limpar();
                             break;

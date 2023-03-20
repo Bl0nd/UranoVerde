@@ -11,11 +11,29 @@ namespace UranoVerde.Pages
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        //instanciando objetos Filme
+        ProdutoDTO objProduto = new ProdutoDTO();
+        ProdutoBLL objBLL = new ProdutoBLL();
+
+        //metodo PopularGVProduto
+        public void PopularGVProduto()
         {
-            ProdutoBLL objBLL = new ProdutoBLL();
             dgv2.DataSource = objBLL.ListarProduto();
             dgv2.DataBind();
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                PopularGVProduto();
+                lblMessage.Text = string.Empty;
+            }
+
+            //iniciando session
+            if (Session["Usuario"] == null)
+            {
+                Response.Redirect("~/entrar.aspx");
+            }
         }
     }
 }

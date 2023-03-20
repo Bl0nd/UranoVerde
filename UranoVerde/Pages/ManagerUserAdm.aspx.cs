@@ -11,6 +11,7 @@ namespace UranoVerde.Pages
 {
     public partial class ManagerUserAdm : System.Web.UI.Page
     {
+        //instanciando objetos Usuario
         UsuarioDTO objModelo = new UsuarioDTO();
         UsuarioBLL objBLL = new UsuarioBLL();
 
@@ -19,22 +20,8 @@ namespace UranoVerde.Pages
             dgv1.DataSource = objBLL.ListarUsuario();
             dgv1.DataBind();
         }
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!IsPostBack)
-            {
-                PopularGV();
-                lblMessage.Text = string.Empty;
-            }
-            //iniciando session
-            if (Session["idUsuario"] == null)
-            {
-                Response.Redirect("~/entrar.aspx");
-            }
-        }
 
-
-        //messageBox
+       //messageBox
         public void MsgBox(String ex, Page pg, Object obj)
         {
             string s = "<SCRIPT language='javascript'>alert('" + ex.Replace("\r\n", "\\n").Replace("'", "") + "'); </SCRIPT>";
@@ -100,6 +87,20 @@ namespace UranoVerde.Pages
                 PageValido = true;
             }
             return PageValido;
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                PopularGV();
+                lblMessage.Text = string.Empty;
+            }
+            ////iniciando session
+            if (Session["idUsuario"] == null)
+            {
+                Response.Redirect("~/entrar.aspx");
+            }
         }
 
         protected void dgv1_RowCommand(object sender, GridViewCommandEventArgs e)

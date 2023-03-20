@@ -12,9 +12,13 @@ namespace UranoVerde.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            UsuarioBLL objBLL = new UsuarioBLL();
-            gv1.DataSource = objBLL.ListarUsuario();
-            gv1.DataBind();
+            UsuarioBLL objUser = new UsuarioBLL();
+            dgv1.DataSource = objUser.ListarUsuario();
+            dgv1.DataBind();
+
+            ProdutoBLL objProduto = new ProdutoBLL();
+            dgv2.DataSource = objProduto.ListarProduto(); //popular o objeto
+            dgv2.DataBind(); //imprimir na tela
         }
     }
 }
