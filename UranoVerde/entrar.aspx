@@ -63,8 +63,8 @@
                 </li>
                 <li>
                     <li>
-                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" CssClass="btnDefault" OnClick="Button1_Click" />
-                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btnDefault" />
+                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" CssClass="btnDefault" OnClick="btnEntrar_Click" />
+                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btnDefault" OnClick="btnCancelar_Click"/>
                     </li>
                 </li>
                 <li>
@@ -75,8 +75,8 @@
                 </li>
  </div>
   </div>
-                <h1>CRIAR NOVA CONTA</h1>
-                <h2>Para criar uma nova conta, digite seus dados</h2>
+               <%-- <h1>CRIAR NOVA CONTA</h1>
+                <h2>Para criar uma nova conta, digite seus dados</h2>--%>
 
 <%--                  <div class="criar">
                 <li>

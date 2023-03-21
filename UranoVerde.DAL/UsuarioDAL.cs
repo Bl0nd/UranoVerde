@@ -133,9 +133,9 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT emailUsuario,senhaUsuario,tpUsuarioId FROM usuario WHERE emailusuario = @emailusuario AND senhausuario = @senhausuario;", conn);
+                cmd = new MySqlCommand("SELECT * FROM usuario WHERE emailUsuario = @emailUsuario AND senhaUsuario = @senhaUsuario;", conn);
                 cmd.Parameters.AddWithValue("@emailUsuario", objEmail);
-                cmd.Parameters.AddWithValue("@SenhaUsuario", objSenha);
+                cmd.Parameters.AddWithValue("@senhaUsuario", objSenha);
                 dr = cmd.ExecuteReader();
                 UsuarioAutenticaDTO obj = null;
                 if (dr.Read())

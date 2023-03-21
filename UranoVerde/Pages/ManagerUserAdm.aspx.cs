@@ -97,9 +97,9 @@ namespace UranoVerde.Pages
                 lblMessage.Text = string.Empty;
             }
             ////iniciando session
-            if (Session["idUsuario"] == null)
+            if (Session["email"] == null)
             {
-                Response.Redirect("/entrar.aspx");
+                Response.Redirect("~/entrar.aspx");
             }
         }
 

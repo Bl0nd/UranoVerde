@@ -29,7 +29,7 @@ namespace UranoVerde
             Limpar();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnEntrar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -38,6 +38,7 @@ namespace UranoVerde
                 string objSenha = txtSenha.Text;
 
                 //instanciando objeto DTO
+
                 UsuarioAutenticaDTO objModelo = new UsuarioAutenticaDTO();
                 UsuarioBLL objValida = new UsuarioBLL();
 
@@ -56,7 +57,13 @@ namespace UranoVerde
                         case 2:
                             Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
                             Response.Redirect("Pages/ConsultaUser.aspx");
-                            //lblMessage.Text = "User";
+                            //lblMessage.Text = "Vendedor";
+                            Limpar();
+                            break;
+                        case 3:
+                            Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
+                            Response.Redirect("Pages/ConsultaUser.aspx");
+                            //lblMessage.Text = "Cliente";
                             Limpar();
                             break;
                     }
