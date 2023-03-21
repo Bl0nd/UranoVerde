@@ -99,7 +99,7 @@ namespace UranoVerde.Pages
             ////iniciando session
             if (Session["idUsuario"] == null)
             {
-                Response.Redirect("~/entrar.aspx");
+                Response.Redirect("/entrar.aspx");
             }
         }
 

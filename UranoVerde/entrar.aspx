@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid background-color: #E4FCE9">
                 <a class="navbar-brand" href="#">
-                    <img src="../img/icon.png" alt="logo"></span></a>
+                    <img src="../img/icon.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,10 +39,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="produtos.aspx">Produtos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="entrar.aspx">Entrar</a>
-                        </li>
+
                     </ul>
+ 
                 </div>
             </div>
         </nav>
@@ -54,8 +53,8 @@
 
                 <li>
                     <%-- //<input type="text" placeholder="Nome:" autocomplete="off" id="nome" autofocus required>--%>
-                    <asp:TextBox ID="txtNome" runat="server" AutoCompleteType="Disabled" MaxLength="150" Width="50%" Placeholder="Nome:"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredNome" runat="server" ErrorMessage="Digite seu email" ForeColor="Green" ControlToValidate="txtNome"></asp:RequiredFieldValidator>
+                    <asp:TextBox ID="txtEmail" runat="server" AutoCompleteType="Disabled" MaxLength="150" Width="50%" Placeholder="Email:"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredNome" runat="server" ErrorMessage="Digite seu email" ForeColor="Green" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
                 </li>
                 <li>
                     <%-- <input type="password" placeholder="Senha:" autocomplete="off" id="senha" maxlength="5" required>--%>
@@ -64,7 +63,7 @@
                 </li>
                 <li>
                     <li>
-                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" CssClass="btnDefault"  />
+                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" CssClass="btnDefault" OnClick="Button1_Click" />
                         <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btnDefault" />
                     </li>
                 </li>

@@ -14,41 +14,47 @@ namespace UranoVerde
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtNome.Focus();
+            txtEmail.Focus();
             lblMessage.Font.Size = 50;
         }
         //limpar
         public void Limpar()
         {
-            txtNome.Text = txtSenha.Text = string.Empty;
-            txtNome.Focus();
+            txtEmail.Text = txtSenha.Text = string.Empty;
+            txtEmail.Focus();
         }
 
-        protected void btnEntrar_Click(object sender, EventArgs e)
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Limpar();
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
         {
             try
             {
                 //pegando a informacao digitada pelo usuario
-                string objNome = txtNome.Text;
+                string objEmail = txtEmail.Text;
                 string objSenha = txtSenha.Text;
 
                 //instanciando objeto DTO
                 UsuarioAutenticaDTO objModelo = new UsuarioAutenticaDTO();
                 UsuarioBLL objValida = new UsuarioBLL();
 
-                objModelo = objValida.AutenticaUsuario(objNome, objSenha);
+                objModelo = objValida.AutenticaUsuario(objEmail, objSenha);
                 if (objModelo != null)
                 {
                     switch (objModelo.tpUsuarioId)
                     {
                         case 1:
-                            Session["Usuario"] = txtNome.Text.Trim().ToUpper();
-                            Response.Redirect("Pages/ManagerUserAdmin.aspx");
+                            Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
+                            Response.Redirect("Pages/ManagerUserAdm.aspx");
+
                             //lblMessage.Text = "Admin";
                             Limpar();
                             break;
                         case 2:
-                            Session["Usuario"] = txtNome.Text.Trim().ToUpper();
+                            Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
                             Response.Redirect("Pages/ConsultaUser.aspx");
                             //lblMessage.Text = "User";
                             Limpar();
@@ -65,11 +71,6 @@ namespace UranoVerde
                 lblMessage.Text = "Deu problema de novo !! " + ex.Message;
                 Limpar();
             }
-        }
-
-        protected void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Limpar();
         }
     }
 }

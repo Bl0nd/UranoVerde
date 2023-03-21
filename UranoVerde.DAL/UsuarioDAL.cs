@@ -128,20 +128,20 @@ namespace UranoVerde.DAL
         }
 
         //Autenticar
-        public UsuarioAutenticaDTO Autenticar(string objNome, string objSenha)
+        public UsuarioAutenticaDTO Autenticar(string objEmail, string objSenha)
         {
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT nomeUsuario,senhaUsuario,tpUsuarioId FROM usuario WHERE nomeusuario = @nomeusuario AND senhausuario = @senhausuario;", conn);
-                cmd.Parameters.AddWithValue("@NomeUsuario", objNome);
+                cmd = new MySqlCommand("SELECT emailUsuario,senhaUsuario,tpUsuarioId FROM usuario WHERE emailusuario = @emailusuario AND senhausuario = @senhausuario;", conn);
+                cmd.Parameters.AddWithValue("@emailUsuario", objEmail);
                 cmd.Parameters.AddWithValue("@SenhaUsuario", objSenha);
                 dr = cmd.ExecuteReader();
                 UsuarioAutenticaDTO obj = null;
                 if (dr.Read())
                 {
                     obj = new UsuarioAutenticaDTO();
-                    obj.nomeUsuario = dr["nomeUsuario"].ToString();
+                    obj.emailUsuario = dr["emailUsuario"].ToString();
                     obj.senhaUsuario = dr["senhaUsuario"].ToString();
                     obj.tpUsuarioId = Convert.ToInt32(dr["tpUsuarioId"]);
                 }

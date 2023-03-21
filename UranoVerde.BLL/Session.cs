@@ -9,13 +9,13 @@ namespace UranoVerde.BLL
     public static class Session
     {
         //usuario
-        private static string Usuario;
+        private static string Email;
 
 
-        public static string nomeUsuario
+        public static string emailUsuario
         {
-            get { return Session.Usuario; }
-            set { Session.Usuario = value; }
+            get { return Session.Email; }
+            set { Session.Email = value; }
         }
     }
 }

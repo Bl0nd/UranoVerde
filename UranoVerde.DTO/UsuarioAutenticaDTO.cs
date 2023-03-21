@@ -8,7 +8,7 @@ namespace UranoVerde.DTO
 {
     public class UsuarioAutenticaDTO
     {
-        public string nomeUsuario { get; set; }
+        public string emailUsuario { get; set; }
         public string senhaUsuario { get; set; }
         public int tpUsuarioId { get; set; }
     }

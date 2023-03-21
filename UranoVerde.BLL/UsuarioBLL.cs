@@ -38,9 +38,9 @@ namespace UranoVerde.BLL
         }
 
         //Autenticar
-        public UsuarioAutenticaDTO AutenticaUsuario(string objNome, string objSenha)
+        public UsuarioAutenticaDTO AutenticaUsuario(string objEmail, string objSenha)
         {
-            UsuarioAutenticaDTO user = objBLL.Autenticar(objNome, objSenha);
+            UsuarioAutenticaDTO user = objBLL.Autenticar(objEmail, objSenha);
             if (user != null)
             {
                 return user;
