@@ -45,7 +45,7 @@ namespace UranoVerde
                 objModelo = objValida.AutenticaUsuario(objEmail, objSenha);
                 if (objModelo != null)
                 {
-                    Response.Redirect("Pages/ManagerUserAdm.aspx",false);
+                    Response.Redirect("Pages/ManagerUserAdm.aspx", false);
                     //switch (objModelo.tpUsuarioId)
                     //{
                     //    case 1:
@@ -63,7 +63,7 @@ namespace UranoVerde
                     //        break;
                     //    case 3:
                     //        Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
-                    //        Response.Redirect("Pages/ConsultaUser.aspx");
+                    //        Response.Redirect("Pages/ConsultaProduto.aspx");
                     //        //lblMessage.Text = "Cliente";
                     //        Limpar();
                     //        break;
