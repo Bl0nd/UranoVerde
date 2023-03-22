@@ -18,15 +18,15 @@ namespace UranoVerde
             lblMessage.Font.Size = 50;
         }
         //limpar
-        public void Limpar()
-        {
-            txtEmail.Text = txtSenha.Text = string.Empty;
-            txtEmail.Focus();
-        }
+        //public void Limpar()
+        //{
+        //    txtEmail.Text = txtSenha.Text = string.Empty;
+        //    txtEmail.Focus();
+        //}
 
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
-            Limpar();
+            //Limpar();
         }
 
         protected void btnEntrar_Click(object sender, EventArgs e)
@@ -45,28 +45,29 @@ namespace UranoVerde
                 objModelo = objValida.AutenticaUsuario(objEmail, objSenha);
                 if (objModelo != null)
                 {
-                    switch (objModelo.tpUsuarioId)
-                    {
-                        case 1:
-                            Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
-                            Response.Redirect("Pages/ManagerUserAdm.aspx");
+                    Response.Redirect("Pages/ManagerUserAdm.aspx",false);
+                    //switch (objModelo.tpUsuarioId)
+                    //{
+                    //    case 1:
+                    //        Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
+                    //        Response.Redirect("Pages/ManagerUserAdm.aspx");
 
-                            //lblMessage.Text = "Admin";
-                            Limpar();
-                            break;
-                        case 2:
-                            Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
-                            Response.Redirect("Pages/ConsultaUser.aspx");
-                            //lblMessage.Text = "Vendedor";
-                            Limpar();
-                            break;
-                        case 3:
-                            Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
-                            Response.Redirect("Pages/ConsultaUser.aspx");
-                            //lblMessage.Text = "Cliente";
-                            Limpar();
-                            break;
-                    }
+                    //        lblMessage.Text = "Admin";
+                    //        Limpar();
+                    //        break;
+                    //    case 2:
+                    //        Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
+                    //        Response.Redirect("Pages/ConsultaUser.aspx");
+                    //        //lblMessage.Text = "Vendedor";
+                    //        Limpar();
+                    //        break;
+                    //    case 3:
+                    //        Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
+                    //        Response.Redirect("Pages/ConsultaUser.aspx");
+                    //        //lblMessage.Text = "Cliente";
+                    //        Limpar();
+                    //        break;
+                    //}
                 }
                 else
                 {
@@ -75,8 +76,8 @@ namespace UranoVerde
             }
             catch (Exception ex)
             {
-                lblMessage.Text = "Deu problema de novo !! " + ex.Message;
-                Limpar();
+                //lblMessage.Text = "Deu problema de novo !! " + ex.Message;
+                //Limpar();
             }
         }
     }

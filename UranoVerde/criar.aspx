@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="entrar.aspx.cs" Inherits="UranoVerde.entrar" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="criar.aspx.cs" Inherits="UranoVerde.criar" %>
 
 <!DOCTYPE html>
 
@@ -42,41 +42,42 @@
                         <li class="nav-item">
                             <a class="nav-link" href="entrar.aspx">Entrar</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="criar.aspx">Criar Conta</a>
-                        </li>
                     </ul>
 
                 </div>
             </div>
         </nav>
         <form id="form1" runat="server">
-            <div class="entrar">
-                <h1>ENTRAR</h1>
-                <h2>Para entrar, digite seu e-mail e senha</h2>
-                <div class="entrarC">
+        <div class="entrarC">
+               <h1>CRIAR NOVA CONTA</h1>
+                <h2>Para criar uma nova conta, digite seus dados</h2>
 
-                    <li>
-                        <%-- //<input type="text" placeholder="Nome:" autocomplete="off" id="nome" autofocus required>--%>
-                        <asp:TextBox ID="txtEmail" runat="server" AutoCompleteType="Disabled" MaxLength="150" Width="50%" Placeholder="Email:"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredNome" runat="server" ErrorMessage="Digite seu email" ForeColor="Green" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
-                    </li>
-                    <li>
-                        <%-- <input type="password" placeholder="Senha:" autocomplete="off" id="senha" maxlength="5" required>--%>
-                        <asp:TextBox ID="txtSenha" runat="server" AutoCompleteType="Disabled" MaxLength="4" TextMode="Password" Width="50%" Placeholder="Senha:"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredSenha" runat="server" ErrorMessage="Digite sua senha" ForeColor="Green" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
-                    </li>
-                    <li>
-                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" CssClass="btnDefault" OnClick="btnEntrar_Click" />
-                        <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btnDefault" OnClick="btnCancelar_Click" />
-                    </li>
-                  <li>
-                        <asp:Label ID="lblMessage" runat="server" Text="xxx"></asp:Label>
-                    </li>
-                </div>
+                    <div class="criar">
+                <li>
+                    <input type="text" placeholder="nome:" autocomplete="off" id="nome" autofocus required></li>
+                <li>
+                    <input type="email" placeholder="email:" autocomplete="off" id="email" required>
+                </li>
+                <li>
+                    <input type="password" placeholder="senha:" autocomplete="off" id="senha" maxlength="4" autofocus
+                        required>
+                </li>
+                <li>
+                    <input type="tel" placeholder="celular:" autocomplete="off" id="celular" maxlength="11" required>
+                </li>
+                <li>
+                    <input type="text" placeholder="endereço:" autocomplete="off" id="endereco" autofocus required>
+                </li>
+                <li>
+                    <input type="text" placeholder="CEP:" autocomplete="off" id="CEP" maxlength="8" required></li>
+                <li>
+                    <input type="submit" class="btnDefault" value="CRIAR CONTRA">
+                </li>
+                    
             </div>
-        </form>
-        <footer>
+        </div>
+    </form>
+                <footer>
             <div class="rodape">
                 <ul class="rodapeC">
                     <li>

@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="entrar.aspx.cs" Inherits="UranoVerde.entrar" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="UranoVerde.login" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +12,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media_entrar.css">
     <%--  bootstrap--%>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <%--boxicons--%>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="img/icon.png" type="icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="shortcut icon" href="img/icon.png" type="icon" />
     <title>Entrar</title>
 </head>
-
 <body class="p-3 m-0 border-0 bd-example" style="background-color: #E4FCE9;">
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -102,7 +101,6 @@
             </div>
         </footer>
     </div>
-    <script src="/script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
-
 </html>
