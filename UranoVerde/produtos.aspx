@@ -369,7 +369,7 @@
 
                     <div class="col">
                         <div class="card">
-                            <img src="img/foto21.jpg" class="card-img-top" alt="Semente de Jabuticaba">
+                            <img src="img/foto21.jpg" class="card-img-top" alt="Semente de Alface">
                             <div class="card-body">
                                 <h5 class="card-title">Semente de Alface</h5>
                                 <p class="card-text">

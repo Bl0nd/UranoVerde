@@ -117,6 +117,10 @@ span {
     height: 50px;
 }
 
+.card p{
+    font-size: 20px;
+}
+
 .inicioI {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);

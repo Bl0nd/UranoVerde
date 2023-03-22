@@ -182,7 +182,7 @@
     <Content Include="scripts\bootstrap.esm.min.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
-    <Content Include="scripts\Script.js" />
+    <Content Include="scripts\script.js" />
     <Content Include="video\assassinato.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
