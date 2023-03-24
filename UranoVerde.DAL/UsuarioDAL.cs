@@ -133,7 +133,7 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("SELECT * FROM usuario WHERE emailUsuario = @emailUsuario AND senhaUsuario = @senhaUsuario;", conn);
+                cmd = new MySqlCommand("SELECT emailUsuario, senhaUsuario,tpUsuarioId FROM usuario WHERE emailUsuario = @emailUsuario AND senhaUsuario = @senhaUsuario;", conn);
                 cmd.Parameters.AddWithValue("@emailUsuario", objEmail);
                 cmd.Parameters.AddWithValue("@senhaUsuario", objSenha);
                 dr = cmd.ExecuteReader();

@@ -57,7 +57,7 @@
         </div>
     </form>
     <%--Scripts--%>
-    <script src="Scripts/Script.js"></script>
+    <script src="Scripts/script.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 
     <%-- footer--%>

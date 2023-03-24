@@ -66,7 +66,7 @@
                         <asp:RequiredFieldValidator ID="RequiredSenha" runat="server" ErrorMessage="Digite sua senha" ForeColor="Green" ControlToValidate="txtSenha"></asp:RequiredFieldValidator>
                     </li>
                     <li>
-                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" CssClass="btnDefault" OnClick="btnEntrar_Click" />
+                        <asp:Button ID="btnEntrar" runat="server" Text="Entrar" CssClass="btnDefault" OnClick="btnEntrar_Click"/>
                         <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btnDefault" OnClick="btnCancelar_Click" />
                     </li>
                   <li>
@@ -101,6 +101,8 @@
             </div>
         </footer>
     </div>
-    <script src="script/script.js"></script>
+    <%--Scripts--%>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 </body>
 </html>

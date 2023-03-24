@@ -311,8 +311,10 @@
             </div>
         </footer>
     </div>
-    <script src="/script/script.js"></script>
+    <%--Scripts--%>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
 </body>
 
 </html>
-</html>
+

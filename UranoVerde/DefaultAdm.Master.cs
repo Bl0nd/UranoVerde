@@ -13,14 +13,14 @@ namespace UranoVerde
         {
             if (Session["Usuario"] == null)
             {
-                Response.Redirect("..entrar.aspx");
+                Response.Redirect("..login.aspx");
             }
             lblMessage.Text = "Bem vindo " + Session["Usuario"] + " a UranoVerde ";
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            Response.Redirect("../entrar.aspx");
+            Response.Redirect("../login.aspx");
         }
     }
 }

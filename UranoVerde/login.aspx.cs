@@ -24,6 +24,13 @@ namespace UranoVerde
             txtEmail.Focus();
         }
 
+      
+
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Limpar();
+        }
+
         protected void btnEntrar_Click(object sender, EventArgs e)
         {
             try
@@ -45,7 +52,7 @@ namespace UranoVerde
                     {
                         case 1:
                             Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
-                            Response.Redirect("Pages/ManagerUserAdm.aspx");
+                            Response.Redirect("ManagerUserAdm2.aspx");
 
                             lblMessage.Text = "Admin";
                             Limpar();
@@ -74,12 +81,6 @@ namespace UranoVerde
                 lblMessage.Text = "Deu problema de novo !! " + ex.Message;
                 Limpar();
             }
-
-        }
-
-        protected void btnCancelar_Click(object sender, EventArgs e)
-        {
-            Limpar();
         }
     }
 }

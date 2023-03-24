@@ -9,8 +9,10 @@ using UranoVerde.DTO;
 
 namespace UranoVerde.Pages
 {
-    public partial class ManagerUserAdm : System.Web.UI.Page
+    public partial class ManagerUserAdm2 : System.Web.UI.Page
     {
+      
+
         //instanciando objetos Usuario
         UsuarioDTO objModelo = new UsuarioDTO();
         UsuarioBLL objBLL = new UsuarioBLL();
@@ -21,7 +23,7 @@ namespace UranoVerde.Pages
             dgv1.DataBind();
         }
 
-       //messageBox
+        //messageBox
         public void MsgBox(String ex, Page pg, Object obj)
         {
             string s = "<SCRIPT language='javascript'>alert('" + ex.Replace("\r\n", "\\n").Replace("'", "") + "'); </SCRIPT>";

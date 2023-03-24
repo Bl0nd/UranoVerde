@@ -89,7 +89,6 @@
     <Content Include="css\media_produtos.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\style.css" />
-    <Content Include="entrar.aspx" />
     <Content Include="img\arvoreafogada.jpg" />
     <Content Include="img\cap.jpg" />
     <Content Include="img\capaprodutos.png" />
@@ -175,6 +174,7 @@
     <Content Include="Pages\img\save.png" />
     <Content Include="Pages\ConsultaProduto.aspx" />
     <Content Include="Pages\ManagerUserAdm.aspx" />
+    <Content Include="ManagerUserAdm2.aspx" />
     <Content Include="produtos.aspx" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
@@ -207,13 +207,6 @@
     </Compile>
     <Compile Include="DefaultUser.Master.designer.cs">
       <DependentUpon>DefaultUser.Master</DependentUpon>
-    </Compile>
-    <Compile Include="entrar.aspx.cs">
-      <DependentUpon>entrar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="entrar.aspx.designer.cs">
-      <DependentUpon>entrar.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -249,6 +242,13 @@
     </Compile>
     <Compile Include="Pages\ManagerUserAdm.aspx.designer.cs">
       <DependentUpon>ManagerUserAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUserAdm2.aspx.cs">
+      <DependentUpon>ManagerUserAdm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManagerUserAdm2.aspx.designer.cs">
+      <DependentUpon>ManagerUserAdm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="produtos.aspx.cs">
       <DependentUpon>produtos.aspx</DependentUpon>
