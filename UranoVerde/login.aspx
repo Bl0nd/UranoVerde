@@ -39,7 +39,7 @@
                             <a class="nav-link" href="produtos.aspx">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="entrar.aspx">Entrar</a>
+                            <a class="nav-link" href="login.aspx">Entrar</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="criar.aspx">Criar Conta</a>
@@ -70,7 +70,7 @@
                         <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btnDefault" OnClick="btnCancelar_Click" />
                     </li>
                   <li>
-                        <asp:Label ID="lblMessage" runat="server" Text="xxx"></asp:Label>
+                        <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
                     </li>
                 </div>
             </div>

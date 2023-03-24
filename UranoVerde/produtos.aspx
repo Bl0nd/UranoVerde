@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary;">
             <div class="container-fluid background-color: #E4FCE9">
                 <a class="navbar-brand" href="#">
-                    <img src="../img/icon.png" alt="logo"></span></a>
+                    <img src="../img/icon.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
                             <a class="nav-link active" aria-current="page" href="produtos.aspx">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="entrar.aspx">Entrar</a>
+                            <a class="nav-link" href="login.aspx">Entrar</a>
                         </li>
                     </ul>
                 </div>

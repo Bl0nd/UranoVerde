@@ -84,7 +84,7 @@ namespace UranoVerde.DAL
             try
             {
                 Conectar();
-                cmd = new MySqlCommand("UPDATE Usuario nomeUsuario=@nomeUsuario,emailUsuario=@emailUsuario,senhaUsuario=@senhaUsuario,cellUsuario=@cellUsuario,enderecoUsuario=@enderecoUsuario,cepUsuario=@cepUsuario,tpUsuarioId=@tpUsuarioId", conn);
+                cmd = new MySqlCommand("UPDATE usuario SET nomeUsuario=@nomeUsuario,emailUsuario=@emailUsuario,senhaUsuario=@senhaUsuario,cellUsuario=@cellUsuario,enderecoUsuario=@enderecoUsuario,cepUsuario=@cepUsuario,tpUsuarioId=@tpUsuarioId  WHERE idUsuario = @idUsuario", conn);
                 cmd.Parameters.AddWithValue("@nomeUsuario", objEdita.nomeUsuario);
                 cmd.Parameters.AddWithValue("@emailUsuario", objEdita.emailUsuario);
                 cmd.Parameters.AddWithValue("@senhaUsuario", objEdita.senhaUsuario);
@@ -92,7 +92,7 @@ namespace UranoVerde.DAL
                 cmd.Parameters.AddWithValue("@enderecoUsuario", objEdita.enderecoUsuario);
                 cmd.Parameters.AddWithValue("@cepUsuario", objEdita.cepUsuario);
                 cmd.Parameters.AddWithValue("@tpUsuarioId", objEdita.tpUsuarioId);
-
+                cmd.Parameters.AddWithValue("@idUsuario", objEdita.idUsuario);
                 cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
