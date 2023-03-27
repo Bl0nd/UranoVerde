@@ -41,39 +41,17 @@ h3 {
 /*#endregion */
 
 /*#region inicio */
-.inicioC {
-    position: relative;
-    width: 100%;
-    height: 80%;
+
+.card img {
+    width: auto;
+    height: 400px;
 }
 
 video {
     width: 100%;
     height: 100%;
-    z-index: -98;
+    /* z-index: 98; */
     position: relative;
-}
-
-.inicioI {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-}
-
-    .inicioI h1 {
-        color: white;
-        font-family: 'Mitr';
-        font-size: 60px;
-        background-color: none;
-    }
-
-    .inicioI h2 {
-        color: white;
-    }
-
-.card img {
-    width: auto;
-    height: 400px;
 }
 
 .promocoes h2 {
@@ -94,6 +72,23 @@ span {
     .sobre h1 {
         background-color: #59fc77;
     }
+
+.inicioC {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+.inicioI h1 {
+    color: white;
+    font-family: 'Mitr';
+    font-size: 60px;
+    background-color: none;
+}
+
+.inicioI h2 {
+    color: white;
+}
 
 .container-fluid {
     background-color: #b7ffc5;
@@ -120,10 +115,6 @@ span {
 .navbar-brand img {
     width: auto;
     height: 50px;
-}
-
-.card p {
-    font-size: 20px;
 }
 
 .inicioI {
@@ -197,6 +188,14 @@ img {
     position: fixed;
 }
 
+/* .navbar{
+    z-index: -98;
+}
+
+.inicio{
+    z-index: 98;
+} */
+
 /*#endregion */
 
 /*#region produtos */
@@ -211,40 +210,21 @@ img {
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    padding: 100px;
+    /* text-align: center; */
+    padding: 50px;
 }
 
-.capaI {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /*text-align: center;*/
+.capaI h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Mitr';
 }
 
-    .capaI h1 {
-        color: white;
-        padding-left: 490px;
-        font-family: 'Mitr';
-        font-size: 55px;
-    }
+.capaI h2 {
+    color: white;
+    font-size: 25px;
+}
 
-    .capaI h2 {
-        color: white;
-        font-size: 25px;
-        padding-left: 500px;
-        font-size: 30px;
-        display:flex;
-    }
-
-    .capaI h1,
-    .capaI h2,
-    .capaI a {
-        margin-right: 530px;
-        margin-bottom: 50px;
-    }
 
 .arbusto h2,
 .arvore h2,
@@ -354,42 +334,3 @@ img {
 }
 
 /*#endregion rodapé */
-
-/*#region login*/
-#login {
-    background-color: rebeccapurple;
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px 0;
-    align-items: center;
-}
-
-    #login h4 {
-        padding: 20px 0;
-        text-align: center;
-    }
-
-
-.cxTexto {
-    width: 100%;
-}
-
-.contactC {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.contactI {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-}
-
-    .contactI li {
-        padding: 20px 10px;
-    }
-
-/*#endregion login*/

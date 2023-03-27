@@ -32,7 +32,7 @@ namespace UranoVerde.Pages
             //iniciando session
             if (Session["email"] == null)
             {
-                Response.Redirect("~/entrar.aspx");
+                Response.Redirect("~/login.aspx");
             }
         }
     }

@@ -19,8 +19,6 @@
         width: auto;
         height: 200px;
     }
-
-
 }
 
 /* 480px: dispositivos móveis */
@@ -42,7 +40,6 @@
 
     .capaI h1 {
         padding-left: 100px;
-
     }
 
     .capaI h2 {
@@ -53,7 +50,7 @@
         width: auto;
         height: 100px;
     }
-    
+
     .navbar-brand img {
         width: auto;
         height: 50px;
@@ -75,32 +72,32 @@
         align-items: center;
     }
 
-    .rodapeC i {
-        margin-left: 20px;
-        font-size: 40px;
-        transition: .5s;
-    }
+        .rodapeC i {
+            margin-left: 20px;
+            font-size: 40px;
+            transition: .5s;
+        }
 
-    .rodapeC li h4 {
-        font-size: 12px;
-        text-align: center;
-    }
+        .rodapeC li h4 {
+            font-size: 12px;
+            text-align: center;
+        }
 
-    .rodapeC img {
-        padding-left: 100px;
-    }
-
+        .rodapeC img {
+            padding-left: 100px;
+        }
 }
 
 /* 320px: dispositivos móveis */
 @media screen and (max-width: 320px) {
     .capaI h1 {
-        padding-left: 50px;
+        padding-left: 20px;
+        font-size: 40px;
     }
 
     .capaI h2 {
         font-size: 15px;
-        padding-left: 30px;
+      /*  padding-left: 30px;*/
         text-align: justify;
     }
 
@@ -116,20 +113,20 @@
         font-size: 15px;
     }
 
-    .entrarC li input[type=text]:focus,
-    .entrarC li input[type=password]:focus,
-    .entrarC li input[type=tel]:focus,
-    .entrarC li textarea:focus {
-        margin-left: 50px;
-        outline: none;
-        align-items: center;
-    }
+        .entrarC li input[type=text]:focus,
+        .entrarC li input[type=password]:focus,
+        .entrarC li input[type=tel]:focus,
+        .entrarC li textarea:focus {
+            margin-left: 50px;
+            outline: none;
+            align-items: center;
+        }
 
     .entrarC li input {
         margin-left: 10px;
     }
 
-    .btnDefault{
+    .btnDefault {
         margin: 10px;
     }
 
@@ -137,7 +134,7 @@
         width: auto;
         height: 100px;
     }
-    
+
     .navbar-brand img {
         width: auto;
         height: 50px;
@@ -159,19 +156,18 @@
         align-items: center;
     }
 
-    .rodapeC i {
-        margin-left: 5px;
-        font-size: 20px;
-        transition: .5s;
-    }
+        .rodapeC i {
+            margin-left: 5px;
+            font-size: 20px;
+            transition: .5s;
+        }
 
-    .rodapeC li h4 {
-        font-size: 8px;
-        text-align: center;
-    }
+        .rodapeC li h4 {
+            font-size: 8px;
+            text-align: center;
+        }
 
-    .rodapeC img {
-        padding-left: 100px;
-    }
-
+        .rodapeC img {
+            padding-left: 100px;
+        }
 }

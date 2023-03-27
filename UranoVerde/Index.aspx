@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media_inicio.css" />
+    <link href="css/media_inicio.css" rel="stylesheet" />
     <%--  bootstrap--%>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
@@ -53,15 +53,15 @@
 
         <main>
             <div class="inicio">
-                <div class="inicioC" >
+                <div class="inicioC" data-aos="fade-up">
                     <video id="video" src="video/assassinato.mp4" muted></video>
+
 
                     <div class="inicioI">
                         <h1>Urano<span>VERDE</span></h1>
                         <h2>Loja de Plantas</h2>
                         <h2>As melhores plantas da internet a um clickplus de distância</h2>
                     </div>
-
                 </div>
             </div>
 
@@ -313,7 +313,7 @@
     </div>
     <%--Scripts--%>
     <script src="scripts/script.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
 </body>
 
 </html>

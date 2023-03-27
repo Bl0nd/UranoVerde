@@ -52,7 +52,7 @@ namespace UranoVerde
                     {
                         case 1:
                             Session["Usuario"] = txtEmail.Text.Trim().ToUpper();
-                            Response.Redirect("ManagerUserAdm2.aspx");
+                            Response.Redirect("Pages/ManagerUserAdm.aspx");
 
                             lblMessage.Text = "Admin";
                             Limpar();

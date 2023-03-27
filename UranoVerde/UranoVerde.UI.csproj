@@ -174,7 +174,6 @@
     <Content Include="Pages\img\save.png" />
     <Content Include="Pages\ConsultaProduto.aspx" />
     <Content Include="Pages\ManagerUserAdm.aspx" />
-    <Content Include="ManagerUserAdm2.aspx" />
     <Content Include="produtos.aspx" />
     <Content Include="scripts\bootstrap.bundle.js" />
     <Content Include="scripts\bootstrap.bundle.min.js" />
@@ -242,13 +241,6 @@
     </Compile>
     <Compile Include="Pages\ManagerUserAdm.aspx.designer.cs">
       <DependentUpon>ManagerUserAdm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ManagerUserAdm2.aspx.cs">
-      <DependentUpon>ManagerUserAdm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ManagerUserAdm2.aspx.designer.cs">
-      <DependentUpon>ManagerUserAdm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="produtos.aspx.cs">
       <DependentUpon>produtos.aspx</DependentUpon>
