@@ -119,13 +119,12 @@
 
 /* 320px: dispositivos móveis */
 @media screen and (max-width: 320px) {
-
     .navbar {
         z-index: 98;
     }
 
-    .video {
-        z-index: 0;
+    .inicioC {
+        z-index: 97;
     }
 
     .inicioI h1 {

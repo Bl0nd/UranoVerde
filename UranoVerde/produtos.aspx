@@ -43,6 +43,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="login.aspx">Entrar</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="criar.aspx">Criar</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -54,7 +57,7 @@
 
                 <div class="capaI">
                     <h1>Urano<span>VERDE</span></h1>
-                    <h2>Os melhores produtos do UranoDEITADO Indústrias</h2>
+                    <h2>Produtos UranoDEITADO LTDA</h2>
                 </div>
 
             </div>

@@ -35,16 +35,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.aspx">Início</a>
+                            <a class="nav-link" href="index.aspx">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="produtos.aspx">Produtos</a>
+                            <a class="nav-link active" aria-current="page" href="produtos.aspx">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="login.aspx">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="criar.aspx">Criar Conta</a>
+                            <a class="nav-link" href="criar.aspx">Criar</a>
                         </li>
                     </ul>
                 </div>
@@ -56,12 +56,12 @@
                 <div class="inicioC" data-aos="fade-up">
                     <video id="video" src="video/assassinato.mp4" muted></video>
 
-
                     <div class="inicioI">
                         <h1>Urano<span>VERDE</span></h1>
                         <h2>Loja de Plantas</h2>
                         <h2>As melhores plantas da internet a um clickplus de distância</h2>
                     </div>
+
                 </div>
             </div>
 
